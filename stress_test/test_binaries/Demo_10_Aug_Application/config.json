@@ -1,0 +1,34 @@
+{
+  "sensor_pressure": [
+    {
+      "ID": "1",
+      "Name": "Pressure Sensor",
+      "Status": "n",
+      "Timeout": "400"
+    }
+  ],
+  "sensor_gyro": [
+    {
+      "ID": "2",
+      "Name": "Gyroscope Sensor",
+      "Status": "n",
+      "Timeout": "5000"
+    }
+  ],
+  "sensor_pedometer": [
+    {
+      "ID": "3",
+      "Name": "Pedometer Sensor",
+      "Status": "n",
+      "Timeout": "5000"
+    }
+  ],
+  "sensor_heartrate": [
+    {
+      "ID": "4",
+      "Name": "Heart Rate Monitor Sensor",
+      "Status": "y",
+      "Timeout": "5000"
+    }
+  ]
+}

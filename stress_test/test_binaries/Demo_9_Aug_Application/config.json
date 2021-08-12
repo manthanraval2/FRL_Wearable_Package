@@ -1,0 +1,18 @@
+{
+  "sensor_pressure": [
+    {
+      "ID": "1",
+      "Name": "Pressure Sensor",
+      "Status": "n",
+      "Timeout": "400"
+    }
+  ],
+  "sensor_gyro": [
+    {
+      "ID": "2",
+      "Name": "Gyroscope Sensor",
+      "Status": "n",
+      "Timeout": "5000"
+    }
+  ]
+}
