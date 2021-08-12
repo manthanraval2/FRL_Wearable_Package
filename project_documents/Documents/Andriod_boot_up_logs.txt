@@ -1,0 +1,1900 @@
+xrwx--x  44 system system    4096 2021-01-08 13:44 data
+mos:/ $ 
+Format: Log Type - Time(microsec) - Message - Optional Info
+Log Type: B - Since Boot(Power On Reset),  D - Delta,  S - Statistic
+S - QC_IMAGE_VERSION_STRING=BOOT.BF.3.3.4-00017
+S - IMAGE_VARIANT_STRING=FAASANAZA
+S - OEM_IMAGE_VERSION_STRING=xr612buildserver-desktop
+S - Secure Boot: Off
+S - JTAG ID @ 0x000a4120 = 0x10200133
+S - Serial Number @ 0x000a4128 = 0xa09a1912
+S - OEM Config Row 0 @ 0x000a4150 = 0x0000000000000000
+S - OEM Config Row 1 @ 0x000a4158 = 0x0000000000000000
+S - Feature Config Row 0 @ 0x000a4160 = 0x3d000496d8801800
+S - Feature Config Row 1 @ 0x000a4168 = 0x02c2f8231c000005
+S - Boot Config, 0x000000e1
+B -       247 - PBL, Start
+B -      2898 - bootable_media_detect_entry, Start
+B -    129012 - bootable_media_detect_success, Start
+B -    129018 - elf_loader_entry, Start
+B -    130711 - auth_hash_seg_entry, Start
+B -    130973 - auth_hash_seg_exit, Start
+B -    160153 - elf_segs_hash_verify_entry, Start
+B -    262107 - PBL, End
+B -    278709 - SBL1, Start
+B -    366183 - pm_device_init, Start
+B -    369172 - pm_target_information_init, PMIC_IS_PM660 detected
+B -    372771 - PM: 0: PON=0x80:KPDPWR_N: ON=0x80:PON_SEQ: OFF=0x4:RAW_XVDD_SHD
+B -    411262 - pm_sbl_config, PBS RAM loading successful
+B -    411323 - PM: SET_VAL:Skip
+D -     47427 - pm_device_init, Delta
+B -    418033 - boot_flash_init, Start
+D -         0 - boot_flash_init, Delta
+B -    423401 - boot_config_data_table_init, Start
+B -    436882 - PM: OCP Clearing for L4A is Skipped :PM660 is not supported the LDO4
+B -    440603 - Board ID 03, cdt subtype=7, hw subtype=69
+D -     29097 - boot_config_data_table_init, Delta - (0 Bytes)
+B -    457042 - CDT version:3,Platform ID:11,Major ID:1,Minor ID:0,Subtype:69
+B -    463203 - sbl1_ddr_set_params, Start
+B -    471987 - manf_id =@0x0
+B -    471987 - cpr_init, Start
+D -       854 - cpr_init, Delta
+B -    475251 - Pre_DDR_clock_init, Start
+D -       305 - Pre_DDR_clock_init, Delta
+D -         0 - sbl1_ddr_set_params, Delta
+B -    488366 - manf_id =@0x5
+B -    489250 - manf_id =@0x5
+B -    491995 - do ddr sanity test, Start
+D -       183 - do ddr sanity test, Delta
+B -    499407 - pm_driver_init, Start
+B -    511729 - PM: OCP Clearing for L4A is Skipped :PM660 is not supported the LDO4
+B -    513986 - PM: Trigger FG IMA Reset
+B -    516731 - PM: Trigger FG IMA Reset.Completed
+B -    521367 - PM: BOOTUP, batt_id: 7771
+B -    524722 - PM: BOOTUP, Debug Board being used
+D -     26504 - pm_driver_init, Delta
+B -    532682 - vsense_init, Start
+D -         0 - vsense_init, Delta
+B -    539331 - DDR Training restore, Start
+D -        91 - DDR Training restore, Delta
+B -    554276 - clock_init, Start
+D -       152 - clock_init, Delta
+B -    554520 - Image Load, Start
+D -     87261 - QSEE Image Loaded, Delta - (1546332 Bytes)
+B -    641811 - Image Load, Start
+D -       244 - SEC Image Loaded, Delta - (2048 Bytes)
+B -    648979 - manf_id =@0x5
+B -    651266 - smem_id @0x86303870=5
+B -    654713 - PM: 0: PON=0x80:KPDPWR_N: ON=0x80:PON_SEQ: OFF=0x4:RAW_XVDD_SHD
+B -    661819 - sbl1_efs_handle_cookies, Start
+D -       518 - sbl1_efs_handle_cookies, Delta
+B -    670054 - Image Load, Start
+D -     26810 - DEVCFG Image Loaded, Delta - (32092 Bytes)
+B -    697504 - Image Load, Start
+D -     18697 - RPM Image Loaded, Delta - (164100 Bytes)
+B -    716231 - Image Load, Start
+D -     65300 - APPSBL Image Loaded, Delta - (850848 Bytes)
+B -    781532 - QSEE Execution, Start
+D -        61 - QSEE Execution, Delta
+B -    787205 - USB D+ check, Start
+D -        30 - USB D+ check, Delta
+B -    793671 - SBL1, End
+D -    517249 - SBL1, Delta
+S - Flash Throughput, 26000 KB/s  (2598812 Bytes,  97102 us)
+S - DDR Frequency, 796 MHz
+S - Core 0 Frequency, 800 MHz
+Android Bootloader - UART_DM Initialized!!!
+[0] welcome to lk
+
+[10] platform_init()
+[10] target_init()
+[30] SDHC Running in HS400 mode
+[40] Done initialization of the card
+[40] Qseecom Init Done in Appsbl version is 0x1001000
+[50] secure app region addr=0x85c00000 size=0x700000[50] TZ App region notif returned with status:0 addr:85c00000 size:7340032
+[60] TZ App log region register returned with status:0 addr:8f711000 size:4096
+[70] Qseecom TZ Init Done in Appsbl
+[80] Loading cmnlib done
+[100] Loading cmnlib64 done
+[100] qseecom_start_app: Loading app keymaster for the first time'
+[130] <8>keymaster64: KEYMASTER Init 
+[130] Waiting for the RPM to populate smd channel table
+[140] batt_id: 7K, batt_temp: 25DegC
+[1140] Entering LK charging loop: Battery current=59082 uA, voltage=3781240 uV
+[1140] Battery Charging is completed Booting to HLOS
+[1150] Active Slot: (_a)
+[1150] Not able to search the panel:
+[1160] panel_operating_mode=0x0
+[1250] ERROR: Splash image header invalid
+[1260] Config MIPI_CMD_PANEL.
+[1340] Turn on MIPI_CMD_PANEL.
+[1350] Idme version is 2.x and set related function to V2.x
+[1350] idme_update_table: finished, no changes
+[1350] aadbg - boot mode: 1
+[1360] serial number: a7340159  board_sn_buf: a7340159
+[1390] status: gpio61 = 1 gpio62 = 1 gpio43 = 0
+[1400] status: gpio55 = 1 gpio56 = 1 gpio57 = 0 gpio59 = 0
+[1400] bootcount = 27
+[1420] Recovery command: 32 bootonce-bootloader
+[1420] Unable to locate /bootselect partition
+[1420] BootImage Header: 0
+[1430] Loading boot image (67108864) active_slot(_a): start
+[1910] Loading boot image (67108864) active_slot(_a): done
+[1920] use_signed_kernel=1, is_unlocked=1, is_tampered=0.
+[1990] MultiSlot true, partition name boot_a
+[1990] AVB version 2
+[2000] avb_vbmeta_image.c[2000] :[2000] 226[2000] : ERROR: [2000] Hash does not match!
+[2000] avb_slot_verify.c[2010] :[2010] 529[2010] : ERROR: [2010] vbmeta_a[2010] : Error verifying vbmeta image: [2010] HASH_MISMATCH[2020] 
+[2020] ReadRollbackIndex Location 0, RollbackIndex 0
+[2020] avb_slot_verify.c[2020] :[2020] 150[2020] : DEBUG: [2030] boot_a[2030] : Loading entire partition.
+[2140] avb_slot_verify.c[2140] :[2150] 230[2150] : DEBUG: [2150] boot_a[2150] : success: Image verification completed.
+[2150] avb_slot_verify.c[2150] :[2160] 150[2160] : DEBUG: [2160] dtbo_a[2160] : Loading entire partition.
+[2160] avb_slot_verify.c[2170] :[2170] 230[2170] : DEBUG: [2170] dtbo_a[2170] : success: Image verification completed.
+[2170] system_a uuid: 0f4ddf8c-9291-577e-ddfd-a651e7a89ea9
+[2180] vbmeta_a uuid: d1259351-17f9-708b-e9a7-c4c0460da64b
+[2180] State: Unlocked, AvbSlotVerify returned ERROR_VERIFICATION, continue boot
+[2190] Requested Partition: boot
+[2190] Loaded Partition: boot
+[2200] Requested Partition: dtbo
+[2200] Loaded Partition: boot
+[2200] Loaded Partition: dtbo
+[2210] Total loaded partition 3
+[2210] boot_verifier: Device is in ORANGE boot state.
+[2210] Skipping verified boot...
+[2220] LK SEC APP Handle: 0x1
+[2220] <8>keymaster64: "cmd_id=INVALID begin"
+[2220] <8>keymaster64: Error: qsee_cfg_getpropval in get_enable_set_bandwidth failed for enable_set_bandwidth, ret_size = 0
+[2230] <8>keymaster64: tz_app_cmd_handler:321:-40
+[2240] <8>keymaster64: cmd_id=INVALID done with ret: -40
+[2240] QSEEcom command to get date support returned error, status: -40
+[2250] Date in patch level NOT supported in keymaster
+[2250] LK SEC APP Handle: 0x1
+[2260] <8>keymaster64: "cmd_id=SET_ROT begin"
+[2260] <8>keymaster64: "rot.data_length: 32"
+[2270] <8>keymaster64: "cmd_id=SET_ROT done with ret: 0 time taken: 0"
+[2270] LK SEC APP Handle: 0x1
+[2270] <8>keymaster64: "cmd_id=GET_VERSION begin"
+[2290] Authentication Key not yet programmed
+[2300] <8>keymaster64: qsee_stor_device_init error ret: -14
+[2300] <8>keymaster64: "secboot device : 0"
+[2300] <8>keymaster64: "cmd_id=GET_VERSION done with ret: 0 time taken: 21"
+[2310] <8>keymaster64: "cmd_id=SET_BOOT_STATE begin"
+[2310] <8>keymaster64: "is_unlocked: 1"
+[2320] <8>keymaster64: "color: 1"
+[2320] <8>keymaster64: "system_version: 80100"
+[2330] <8>keymaster64: "system_security_level 201908"
+[2330] <8>keymaster64: "cmd_id=SET_BOOT_STATE done with ret: 0 time taken: 0"
+[2340] Sending Root of Trust to trustzone: end
+[2340] LK SEC APP Handle: 0x1
+[2350] <8>keymaster64: "cmd_id=INVALID begin"
+[2350] <8>keymaster64: tz_app_cmd_handler:321:-40
+[2350] <8>keymaster64: cmd_id=INVALID done with ret: -40
+[2360] QSEEcom command for setting vbh returned error: -40
+[2360] VBH not supported in keymaster, continue boot
+[2370] VB2: Authenticate complete! boot state is: orange
+[2370] VB2: boot state: orange(1)
+[2380] Boot State is : 1
+[2380] display_fbcon_menu_message: Location=9
+[2390] display_fbcon_menu_message: Location=11
+[2390] display_fbcon_menu_message: Location=11
+[2400] creating boot verify keys detect thread
+[12460] ERROR: Splash image header invalid
+[12470] Uncpmpressed kernel in use
+[12470] Kernel image not patched..Unable to locate dt offset
+[12490] DTBO Overlay count start: 438170
+[12560] DTB overlay is successful
+[12560] DTBO Overlay count done: 440592
+[12560] UpdateCmdLine vbcmdline present len 447
+[12570] GetDDRVendorId = 5
+[12570] GetDDRVendorId KINGSTON 
+[12570] display kernel cmdline: mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_auo_ft2388_474p_cmd:1:none:cfg:single_dsi
+[12580] GetDDRVendorId = 5
+[12590] cmdline: console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_debug=30 vmalloc=300M msm_rtb.filter=0x237 ehci-t
+[12860] kaslr-Seed is added to chosen node
+[12870] Updating device tree: done
+[12870] Turn off MIPI_CMD_PANEL.
+[12870] Continuous splash enabled, keeping panel alive.
+[12880] <8>keymaster64: "cmd_id=MILESTONE_CALL begin"
+[12880] <8>keymaster64: "cmd_id=MILESTONE_CALL done with ret: 0 time taken: 0"
+[12890] Success [12890] Qseecom De-Init Done in Appsbl
+[12910] free_verified_boot_resource
+[12910] booting linux @ 0x80008000, ramdisk @ 0x83600000 (5235147), tags/device tree @ 0x83400000
+[    0.000000] Booting Linux on physical CPU 0x100
+[    0.000000] Linux version 4.9.193+ (bu10-build-server@bu10buildserver-All-Series) (gcc version 4.9.x 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT F1
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c0383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt:Machine model: MOS P1
+[    0.000000] Reserved memory: created CMA memory pool at 0x8f800000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node venus_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0xbfc00000, size 4 MiB
+[    0.000000] OF: reserved mem: initialized node adsp_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0xbf400000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node secure_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0x8f000000, size 8 MiB
+[    0.000000] OF: reserved mem: initialized node gpu_region@0, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: invalid size property in 'mem_dump_region' node.
+[    0.000000] Reserved memory: created CMA memory pool at 0xbe400000, size 16 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_region@0, compatible id shared-dma-pool
+[    0.000000] Reserved memory: created CMA memory pool at 0xbe000000, size 4 MiB
+[    0.000000] OF: reserved mem: initialized node qseecom_ta_region, compatible id shared-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x85b00000, size 13 MiB
+[    0.000000] OF: reserved mem: initialized node other_ext_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x86800000, size 80 MiB
+[    0.000000] OF: reserved mem: initialized node modem_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x8b800000, size 21 MiB
+[    0.000000] OF: reserved mem: initialized node adsp_fw_region@0, compatible id removed-dma-pool
+[    0.000000] Removed memory: created DMA memory pool at 0x8cd00000, size 7 MiB
+[    0.000000] OF: reserved mem: initialized node wcnss_fw_region@0, compatible id removed-dma-pool
+[    0.000000] cma: Reserved 16 MiB at 0xbd000000
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] psci: probing for conduit method from DT.
+[    0.000000] psci: PSCIv1.0 detected in firmware.
+[    0.000000] psci: Using standard PSCI v0.2 function IDs
+[    0.000000] psci: MIGRATE_INFO_TYPE not supported.
+[    0.000000] psci: SMC Calling Convention v1.0
+[    0.000000] Did not receive the expected number of bytes from PRNG: 0
+[    0.000000] percpu: max_distance=0x40000 too large for vmalloc space 0x0
+[    0.000000] percpu: Embedded 16 pages/cpu s33152 r8192 d24192 u65536
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 229736
+[    0.000000] Kernel command line: sched_enable_hmp=1 kpti=0 console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_deb2
+[    0.000000] log_buf_len individual max cpu contribution: 131072 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 393216 bytes
+[    0.000000] log_buf_len min size: 131072 bytes
+[    0.000000] log_buf_len: 524288 bytes
+[    0.000000] early log buf free: 126252(96%)
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] allocated 5242880 bytes of page_ext
+[    0.000000] Node 0, zone   Normal: page owner found early allocated 152576 pages
+[    0.000000] Node 0, zone  HighMem: page owner found early allocated 78848 pages
+[    0.000000] Memory: 783016K/924672K available (16384K kernel code, 1296K rwdata, 5252K rodata, 2048K init, 6394K bss, 76120K reserved, 65536K cma-r)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0xecc00000 - 0xff800000   ( 300 MB)
+[    0.000000]     lowmem  : 0xcd400000 - 0xecc00000   ( 504 MB)
+[    0.000000]     vmalloc : 0xc5b00000 - 0xcd400000   ( 121 MB)
+[    0.000000]     lowmem  : 0xc0000000 - 0xc5b00000   (  91 MB)
+[    0.000000]     pkmap   : 0xbfe00000 - 0xc0000000   (   2 MB)
+[    0.000000]     modules : 0xbf000000 - 0xbfe00000   (  14 MB)
+[    0.000000]       .text : 0x(ptrval) - 0x(ptrval)   (17376 kB)
+[    0.000000]       .init : 0x(ptrval) - 0x(ptrval)   (2048 kB)
+[    0.000000]       .data : 0x(ptrval) - 0x(ptrval)   (1297 kB)
+[    0.000000]        .bss : 0x(ptrval) - 0x(ptrval)   (6395 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000]  RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000]  RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000] 
+[    0.000000] **********************************************************
+[    0.000000] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000] **                                                      **
+[    0.000000] ** trace_printk() being used. Allocating extra memory.  **
+[    0.000000] **                                                      **
+[    0.000000] ** This means that this is a DEBUG kernel and it is     **
+[    0.000000] ** unsafe for production use.                           **
+[    0.000000] **                                                      **
+[    0.000000] ** If you see this message and you are not debugging    **
+[    0.000000] ** the kernel, report this immediately to your vendor!  **
+[    0.000000] **                                                      **
+[    0.000000] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000] **********************************************************
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000]  Offload RCU callbacks from all CPUs
+[    0.000000]  Offload RCU callbacks from CPUs: 0-3.
+[    0.000000] arm_arch_timer: Architected cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x46d987e47, max_idle_ns: 440795202767 ns
+[    0.000005] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 4398046511078ns
+[    0.000026] clocksource: Switched to clocksource arch_sys_counter
+[    0.000040] Switching to timer-based delay loop, resolution 52ns
+[    0.003213] kmemleak: Kernel memory leak detector disabled
+[    0.003257] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.40 BogoMIPS (lpj=192000)
+[    0.003276] pid_max: default: 32768 minimum: 301
+[    0.003527] Security Framework initialized
+[    0.003540] SELinux:  Initializing.
+[    0.003714] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.003755] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.005179] CPU: Testing write buffer coherency: ok
+[    0.005254] ftrace: allocating 40144 entries in 118 pages
+[    0.116445] /cpus/cpu@100 missing clock-frequency property
+[    0.116475] /cpus/cpu@101 missing clock-frequency property
+[    0.116499] /cpus/cpu@102 missing clock-frequency property
+[    0.116528] /cpus/cpu@103 missing clock-frequency property
+[    0.116697] sched-energy: Sched-energy-costs installed from DT
+[    0.116712] CPU0: update cpu_capacity 1024
+[    0.120636] Setting up static identity map for 0x80100000 - 0x80100058
+[    0.120845] NOHZ: local_softirq_pending 02
+[    0.140752] Core Debug Lock unlocked
+[    0.141389] MSM Memory Dump base table set up
+[    0.141472] MSM Memory Dump apps data table set up
+[    0.167375] CPU1: update cpu_capacity 1024
+[    0.188290] CPU2: update cpu_capacity 1024
+[    0.209157] CPU3: update cpu_capacity 1024
+[    0.209647] Brought up 4 CPUs
+[    0.209677] SMP: Total of 4 processors activated (153.60 BogoMIPS).
+[    0.209689] CPU: All CPU(s) started in SVC mode.
+[    0.209912] CPU3: update max cpu_capacity 1024
+[    0.210066] CPU3: update max cpu_capacity 1024
+[    0.433928] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.435129] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.435268] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.490430] pinctrl core: initialized pinctrl subsystem
+[    0.492759] NET: Registered protocol family 16
+[    0.507409] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.507431] schedtune: init normalization constants...
+[    0.507450] schedtune: CLUSTER[0-3]      min_pwr:     1 max_pwr:   120
+[    0.507463] schedtune: CPU[0]            min_pwr:    40 max_pwr:   470
+[    0.507477] schedtune: CPU[1]            min_pwr:    40 max_pwr:   470
+[    0.507491] schedtune: CPU[2]            min_pwr:    40 max_pwr:   470
+[    0.507504] schedtune: CPU[3]            min_pwr:    40 max_pwr:   470
+[    0.507517] schedtune: SYSTEM            min_pwr:   161 max_pwr:  2000
+[    0.507531] schedtune: using normalization constants mul: 488117545 sh1: 1 sh2: 10
+[    0.507542] schedtune: verify normalization constants...
+[    0.507554] schedtune: max_pwr/2^0: 1839 => norm_pwr:  1024
+[    0.507566] schedtune: max_pwr/2^1:  919 => norm_pwr:   511
+[    0.507578] schedtune: max_pwr/2^2:  459 => norm_pwr:   255
+[    0.507590] schedtune: max_pwr/2^3:  229 => norm_pwr:   127
+[    0.507602] schedtune: max_pwr/2^4:  114 => norm_pwr:    63
+[    0.507614] schedtune: max_pwr/2^5:   57 => norm_pwr:    31
+[    0.507626] schedtune: configured to support 5 boost groups
+[    0.512741] cpuidle: using governor menu
+[    0.514136] cpuidle: using governor qcom
+[    0.544660] unable to find DT imem DLOAD mode node
+[    0.545463] unable to find DT imem EDLOAD mode node
+[    0.562652] msm_watchdog b017000.qcom,wdt: wdog absent resource not present
+[    0.568392] msm_watchdog b017000.qcom,wdt: MSM Watchdog Initialized
+[    0.573567] platform soc:qcom,adsprpc-mem: assigned reserved memory node adsp_region@0
+[    0.578174] platform 4080000.qcom,mss: assigned reserved memory node modem_region@0
+[    0.578669] platform c200000.qcom,lpass: assigned reserved memory node adsp_fw_region@0
+[    0.579163] platform a21b000.qcom,pronto: assigned reserved memory node wcnss_fw_region@0
+[    0.579519] platform 1de0000.qcom,venus: assigned reserved memory node venus_region@0
+[    0.624296] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.624314] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.624560] msm8937-pinctrl 1000000.pinctrl: invalid resource
+[    0.630433] cpu-clock-8939 b011050.qcom,cpu-clock-8939: No PVS version available. Defaulting to 0!
+[    0.630450] cpu-clock-8939 b011050.qcom,cpu-clock-8939: Speed bin: 4 PVS Version: 0
+[    0.639711] smd_channel_probe_now: allocation table not initialized
+[    0.639916] smd_channel_probe_now: allocation table not initialized
+[    0.640192] smd_channel_probe_now: allocation table not initialized
+[    0.643039] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    0.654161] pm660_s1_level: Bringing 1uV into 16-16uV
+[    0.655390] pm660_s1_floor_level: Bringing 1uV into 16-16uV
+[    0.656868] pm660_s1_level_ao: Bringing 1uV into 16-16uV
+[    0.658522] pm660_s2_level: Bringing 1uV into 16-16uV
+[    0.659573] pm660_s2_level_ao: Bringing 1uV into 16-16uV
+[    0.660879] pm660_s2_level_so: Bringing 1uV into 16-16uV
+[    0.687863] pm660_s6_level: Bringing 1uV into 16-16uV
+[    0.691880] cpr_efuse_init: apc_corner: efuse_addr = 0x000a4000 (len=0x1000)
+[    0.691932] cpr_read_fuse_revision: apc_corner: fuse revision = 1
+[    0.691952] cpr_parse_speed_bin_fuse: apc_corner: [row: 37]: 0x28805071a09a1912, speed_bits = 4
+[    0.692053] cpr_pvs_init: apc_corner: pvs voltage: [772000 788000 900000] uV
+[    0.692068] cpr_pvs_init: apc_corner: ceiling voltage: [810000 845000 980000] uV
+[    0.692083] cpr_pvs_init: apc_corner: floor voltage: [700000 700000 790000] uV
+[    0.698156] spmi spmi-0: PMIC arbiter version v2 (0x20010000)
+[    0.710444] spm_regulator_probe: name=pm660_s3, range=LV, voltage=800000 uV, mode=AUTO, step rate=4363 uV/us
+[    0.711638] sps:sps is ready.
+[    0.713854] gfx3d_clk_src: set OPP pair(19200000 Hz: 128 uV) on 1c00000.qcom,kgsl-3d0
+[    0.714799] gfx3d_clk_src: set OPP pair(200000000 Hz: 128 uV) on 1c00000.qcom,kgsl-3d0
+[    0.717314] gfx3d_clk_src: set OPP pair(650000000 Hz: 384 uV) on 1c00000.qcom,kgsl-3d0
+[    0.754160] qcom,gcc-spm-8952 b111200.qcom,spm: Registered GCC SPM clocks
+[    0.754212] qcom,gcc-8952 1800000.qcom,gcc: Registered GCC clocks
+[    0.754368] cpu-clock-8939 b011050.qcom,cpu-clock-8939: No PVS version available. Defaulting to 0!
+[    0.754384] cpu-clock-8939 b011050.qcom,cpu-clock-8939: Speed bin: 4 PVS Version: 0
+[    0.754880] cpr_efuse_init: apc_corner: efuse_addr = 0x000a4000 (len=0x1000)
+[    0.754923] cpr_read_fuse_revision: apc_corner: fuse revision = 1
+[    0.754942] cpr_parse_speed_bin_fuse: apc_corner: [row: 37]: 0x28805071a09a1912, speed_bits = 4
+[    0.755044] cpr_pvs_init: apc_corner: pvs voltage: [772000 788000 900000] uV
+[    0.755058] cpr_pvs_init: apc_corner: ceiling voltage: [810000 845000 980000] uV
+[    0.755073] cpr_pvs_init: apc_corner: floor voltage: [700000 700000 790000] uV
+[    0.755438] cpr_init_cpr_parameters: apc_corner: up threshold = 2, down threshold = 4
+[    0.755472] cpr_init_cpr_parameters: apc_corner: CPR is enabled by default.
+[    0.755547] cpr_init_cpr_efuse: apc_corner: [row:67] = 0x5b4b4812f384f661
+[    0.755575] cpr_init_cpr_efuse: apc_corner: Corner[1]: ro_sel = 5, target quot = 722
+[    0.755590] cpr_init_cpr_efuse: apc_corner: Corner[2]: ro_sel = 5, target quot = 755
+[    0.755604] cpr_init_cpr_efuse: apc_corner: Corner[3]: ro_sel = 5, target quot = 985
+[    0.755637] cpr_adjust_target_quots: apc_corner: Corner[1]: adjusted target quot = 648
+[    0.755659] cpr_adjust_target_quots: apc_corner: Corner[3]: adjusted target quot = 955
+[    0.755760] cpr_get_corner_quot_adjustment: apc_corner: fuse corner 2 quotient adjustment scaling factor: 0.557
+[    0.755774] cpr_get_corner_quot_adjustment: apc_corner: fuse corner 3 quotient adjustment scaling factor: 0.385
+[    0.755808] cpr_virtual_corner_quot_adjust: apc_corner: corner=3 adjusted quotient=815
+[    0.755835] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[1] = 648
+[    0.755848] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[2] = 755
+[    0.755860] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[3] = 815
+[    0.755872] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[4] = 874
+[    0.755885] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[5] = 933
+[    0.755897] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[6] = 955
+[    0.755977] cpr_fill_override_voltage: apc_corner: ceiling override voltage: [810000 845000 885000 980000 980000 980000] uV
+[    0.757248] cpr_init_floor_to_ceiling_range: apc_corner: Final floor override voltages: [724000 740000 792000 792000 824000 836000] uV
+[    0.757325] cpr_config: apc_corner: Timer count: 0x17700 (for 5000 us)
+[    0.757852] apc_corner: Bringing 0uV into 1-1uV
+[    0.758797] cpu-clock-8939 b011050.qcom,cpu-clock-8939: No PVS version available. Defaulting to 0!
+[    0.758814] cpu-clock-8939 b011050.qcom,cpu-clock-8939: Speed bin: 4 PVS Version: 0
+[    0.765230] populate_opp_table: clock-cpu-8939: OPP tables populated (cpu 0 and 3)
+[    0.765245] print_opp_table: clock_cpu: a53_c1: OPP voltage for 960000000: 772000
+[    0.765260] print_opp_table: clock_cpu: a53_c1: OPP voltage for 2016000000: 900000
+[    0.766146] pstore: using zlib compression
+[    0.768000] console [pstore-1] enabled
+[    0.768292] pstore: Registered ramoops as persistent store backend
+[    0.768310] ramoops: attached 0x100000@0x91400000, ecc: 0/0
+[    0.811001] sched-energy energy-costs: cpu=0 eff=1024 [freq=960000 cap=488 power_d0=159] -> [freq=2016000 cap=1024 power_d0=470]
+[    0.811023] CPU0: update cpu_capacity 1024
+[    0.811046] sched-energy energy-costs: cpu=1 eff=1024 [freq=960000 cap=488 power_d0=159] -> [freq=2016000 cap=1024 power_d0=470]
+[    0.811061] CPU1: update cpu_capacity 1024
+[    0.811082] sched-energy energy-costs: cpu=2 eff=1024 [freq=960000 cap=488 power_d0=159] -> [freq=2016000 cap=1024 power_d0=470]
+[    0.811097] CPU2: update cpu_capacity 1024
+[    0.811118] sched-energy energy-costs: cpu=3 eff=1024 [freq=960000 cap=488 power_d0=159] -> [freq=2016000 cap=1024 power_d0=470]
+[    0.811133] CPU3: update cpu_capacity 1024
+[    0.813056] sched-energy energy-costs: Sched-energy-costs capacity updated
+[    0.820175] CPU0: update max cpu_capacity 1024
+[    0.827327] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
+[    0.827363] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
+[    0.827412] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.827445] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.829150] dsi_pll_clock_register_12nm: Registered DSI PLL ndx=0 clocks successfully
+[    0.829249] mdss_pll_probe: MDSS pll label = MDSS DSI 1 PLL
+[    0.829270] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 1 PLL PLL SSC enabled
+[    0.829318] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.829350] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.831695] dsi_pll_clock_register_12nm: Registered DSI PLL ndx=1 clocks successfully
+[    0.833771] msm_cpuss_dump soc:cpuss_dump: Couldn't get memory for dumping
+[    0.840169] KPI: Bootloader start count = 28840
+[    0.840193] KPI: Bootloader end count = 452248
+[    0.840207] KPI: Bootloader display count = 72992
+[    0.840221] KPI: Bootloader load kernel count = 15886
+[    0.840247] KPI: Kernel MPM timestamp = 599925
+[    0.840260] KPI: Kernel MPM Clock frequency = 32768
+[    0.840305] socinfo_print: v0.10, id=416, ver=1.0, raw_id=307, raw_ver=0, hw_plat=11, hw_plat_ver=65536
+[    0.840305]  accessory_chip=0, hw_plat_subtype=69, pmic_model=65563, pmic_die_revision=131072 foundry_id=1 serial_number=2694453522
+[    0.846817] arm-smmu 1c40000.arm,smmu-kgsl:  (IDR0.CTTW overridden by dma-coherent property)
+[    0.846848] arm-smmu 1c40000.arm,smmu-kgsl:  stream matching with 4 register groups, mask 0x7fff
+[    0.849326] arm-smmu 1e00000.qcom,iommu:     (IDR0.CTTW overridden by dma-coherent property)
+[    0.849352] arm-smmu 1e00000.qcom,iommu:     stream matching with 124 register groups, mask 0x7fff
+[    0.849482] arm-smmu 1e00000.qcom,iommu: found 32 context interrupt(s) but have 30 context banks. assuming 30 context interrupts.
+[    0.850788] iommu: Adding device soc:qcom,msm-audio-ion to group 0
+[    0.855996] qcom,qpnp-misc 200f000.qcom,spmi:qcom,pm660@0:qcom,misc@900: probe successful
+[    0.856894] SCSI subsystem initialized
+[    0.857433] usbcore: registered new interface driver usbfs
+[    0.857616] usbcore: registered new interface driver hub
+[    0.858063] usbcore: registered new device driver usb
+[    0.860411] qcom,qpnp-power-on 200f000.qcom,spmi:qcom,pm660@0:qcom,power-on@800: PMIC@SID0 Power-on reason: Triggered from KPD (power key press) ant
+[    0.860444] qcom,qpnp-power-on 200f000.qcom,spmi:qcom,pm660@0:qcom,power-on@800: PMIC@SID0: Unknown power-off reason
+[    0.861083] input: qpnp_pon as /devices/virtual/input/input0
+[    0.862349] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    0.862544] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.862563] i2c-msm-v2 78b6000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    0.863196] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.864488] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    0.864588] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.864605] i2c-msm-v2 78b7000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    0.865218] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.865803] i2c-msm-v2 78b8000.i2c: probing driver i2c-msm-v2
+[    0.865890] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.865907] i2c-msm-v2 78b8000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    0.866512] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.867576] i2c-msm-v2 7af6000.i2c: probing driver i2c-msm-v2
+[    0.867661] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.867678] i2c-msm-v2 7af6000.i2c: msm_bus_scale_register_client(mstr-id:84):0 (not a problem)
+[    0.868339] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.869620] media: Linux media interface: v0.10
+[    0.869774] Linux video capture interface: v2.00
+[    0.897693] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.897724] thermal thermal_zone42: failed to read out thermal zone (-22)
+[    0.897777] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.897795] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    0.900177] EDAC MC: Ver: 3.0.0
+[    0.903161] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.903175] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    0.903662] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.903672] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    0.904026] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.904035] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    0.904422] virt zone: sensor[quiet-therm-adc] read error:-22
+[    0.904430] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    0.904490] cpufreq: driver msm up and running
+[    0.905901] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region@0
+[    0.906102] platform soc:qcom,ion:qcom,ion-heap@19: assigned reserved memory node qseecom_ta_region
+[    0.906270] platform soc:qcom,ion:qcom,ion-heap@8: assigned reserved memory node secure_region@0
+[    0.906640] ION heap system created
+[    0.906882] ION heap qsecom created at 0xbe400000 with size 1000000
+[    0.906897] ION heap qsecom_ta created at 0xbe000000 with size 400000
+[    0.906939] ION heap mm created at 0xbf400000 with size 800000
+[    0.908738] PMIC@SID0: PM660 v2.0 options: 0, 0, 0, 0
+[    0.909676] Advanced Linux Sound Architecture Driver Initialized.
+[    0.910342] Bluetooth: Core ver 2.22
+[    0.910374] NET: Registered protocol family 31
+[    0.910380] Bluetooth: HCI device and connection manager initialized
+[    0.910393] Bluetooth: HCI socket layer initialized
+[    0.910405] Bluetooth: L2CAP socket layer initialized
+[    0.910914] NetLabel: Initializing
+[    0.910921] NetLabel:  domain hash size = 128
+[    0.910927] NetLabel:  protocols = UNLABELED CIPSOv4
+[    0.910978] NetLabel:  unlabeled traffic allowed by default
+[    0.912213] clocksource: Switched to clocksource arch_sys_counter
+[    0.972502] VFS: Disk quotas dquot_6.6.0
+[    0.972588] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.972697] msm_bus_fabric_init_driver
+[    0.984589] msm_bus_device 580000.ad-hoc-bus: Bus scaling driver probe successful
+[    0.986545] Quanta idme_init 3 board_id 
+[    0.986562] Quanta idme_init 3 serial 
+[    0.986573] Quanta idme_init 3 mac_addr 
+[    0.986583] Quanta idme_init 3 mac_sec 
+[    0.986594] Quanta idme_init 3 bt_mac_addr 
+[    0.986605] Quanta idme_init 3 ble_mac_addr 
+[    0.986615] Quanta idme_init 3 productid 
+[    0.986626] Quanta idme_init 3 productid2 
+[    0.986636] Quanta idme_init 3 bootmode 
+[    0.986647] Quanta idme_init 3 postmode 
+[    0.986658] Quanta idme_init 3 bootcount 
+[    0.986668] Quanta idme_init 3 manufacturing 
+[    0.986695] Quanta idme_init 3 imei 
+[    0.986706] Quanta idme_init 3 time_offset 
+[    0.986717] Quanta idme_init 3 root_detect 
+[    0.986728] Quanta idme_init 3 sw_revision_cur 
+[    0.986738] Quanta idme_init 3 sw_revision_1 
+[    0.986749] Quanta idme_init 3 sw_revision_2 
+[    0.986760] Quanta idme_init 3 sw_revision_3 
+[    0.986770] Quanta idme_init 3 therm_shutdn 
+[    0.986781] Quanta idme_init 3 model 
+[    0.986791] Quanta idme_init 3 FRT 
+[    0.986801] Quanta idme_init 3 QTAUA_SUA_SRA 
+[    0.986812] Quanta idme_init 3 QTAUA_datetime 
+[    0.986823] Quanta idme_init 3 QTAUA_imgv 
+[    0.986833] Quanta idme_init 3 QTAUA_url 
+[    0.986971] NET: Registered protocol family 2
+[    0.987630] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.987720] TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.987781] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.987895] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.987932] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.988313] NET: Registered protocol family 1
+[    0.989523] gcc-mdss-8952 soc:qcom,gcc-mdss@1800000: Registered GCC MDSS clocks.
+[    0.995000] Freeing initrd memory: 5116K
+[    0.996603] hw perfevents: enabled with ARMv8 Cortex-A53 PMU driver, 7 counters available
+[    0.997885] cryptomgr_test (68) used greatest stack depth: 6520 bytes left
+[    0.997935] cryptomgr_test (69) used greatest stack depth: 6444 bytes left
+[    1.001990] audit: initializing netlink subsys (disabled)
+[    1.002057] audit: type=2000 audit(0.999:1): initialized
+[    1.006305] Initialise system trusted keyrings
+[    1.006828] workingset: timestamp_bits=29 max_order=18 bucket_order=0
+[    1.017431] Registering sdcardfs 0.1
+[    1.017677] fuse init (API version 7.26)
+[    1.019088] pfk_ext4 [pfk_ext4_init]: PFK EXT4 inited successfully
+[    1.019096] pfk_f2fs [pfk_f2fs_init]: PFK F2FS inited successfully
+[    1.019105] pfk [pfk_init]: Driver initialized successfully
+[    1.019866] cryptomgr_test (96) used greatest stack depth: 5884 bytes left
+[    1.021344] cryptomgr_test (107) used greatest stack depth: 5820 bytes left
+[    1.023883] Key type asymmetric registered
+[    1.023897] Asymmetric key parser 'x509' registered
+[    1.024496] bounce: pool size: 64 pages
+[    1.024752] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 248)
+[    1.024763] io scheduler noop registered
+[    1.024939] io scheduler cfq registered (default)
+[    1.038570] msm_mdss_get_res_byname: 'vbif_nrt_phys' resource not found
+[    1.038594] mdss_mdp_probe+0x1e4/0x170c->msm_mdss_ioremap_byname: 'vbif_nrt_phys' msm_mdss_get_res_byname failed
+[    1.038860] mdss_mdp_irq_clk_register: unable to get clk: lut_clk
+[    1.038880] mdss_mdp_irq_clk_register: unable to get clk: mnoc_clk
+[    1.039715] No change in context(0==0), skip
+[    1.040226] mdss_mdp_pipe_addr_setup: type:0 ftchid:-1 xinid:0 num:0 rect:0 ndx:0x1 prio:0
+[    1.040273] mdss_mdp_pipe_addr_setup: type:1 ftchid:-1 xinid:1 num:3 rect:0 ndx:0x8 prio:1
+[    1.040281] mdss_mdp_pipe_addr_setup: type:1 ftchid:-1 xinid:5 num:4 rect:0 ndx:0x10 prio:2
+[    1.040297] mdss_mdp_pipe_addr_setup: type:2 ftchid:-1 xinid:2 num:6 rect:0 ndx:0x40 prio:3
+[    1.040313] mdss_mdp_pipe_addr_setup: type:3 ftchid:-1 xinid:7 num:10 rect:0 ndx:0x400 prio:0
+[    1.040325] mdss_mdp_parse_dt_handler: Error from prop qcom,mdss-pipe-sw-reset-off : u32 array read
+[    1.040413] mdss_mdp_parse_dt_handler: Error from prop qcom,mdss-ib-factor-overlap : u32 array read
+[    1.040424] mdss_mdp_parse_dt_handler: Error from prop qcom,mdss-bus-througput-factor : u32 array read
+[    1.040776] xlog_status: enable:1, panic:1, dump:2
+[    1.041212] iommu: Adding device 1a00000.qcom,mdss_mdp:qcom,smmu_mdp_unsec_cb to group 1
+[    1.041537] iommu: Adding device 1a00000.qcom,mdss_mdp:qcom,smmu_mdp_sec_cb to group 2
+[    1.041849] mdss_mdp_probe: mdss version = 0x100e0000, bootloader display is on, num 1, intf_sel=0x00000100
+[    1.044773] mdss_smmu_util_parse_dt_clock: clocks are not defined
+[    1.044794] mdss_smmu_probe: iommu v2 domain[0] mapping and clk register successful!
+[    1.044831] mdss_smmu_util_parse_dt_clock: clocks are not defined
+[    1.044842] mdss_smmu_probe: iommu v2 domain[2] mapping and clk register successful!
+[    1.045415] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    1.045435] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    1.045452] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    1.046497] mdss_dsi_ctrl_probe: DSI Ctrl name = MDSS DSI CTRL->0
+[    1.046724] mdss_dsi_find_panel_of_node: cmdline:0:qcom,mdss_dsi_auo_ft2388_474p_cmd:1:none:cfg:single_dsi panel_name:qcom,mdss_dsi_auo_ft2388_474pd
+[    1.046739] mdss_dsi_panel_init: Panel Name = AUO ft2388 474p command mode dsi panel
+[    1.046876] mdss_dsi_panel_timing_from_dt: found new timing "qcom,mdss_dsi_auo_ft2388_474p_cmd" (eb6935a0)
+[    1.046894] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-post-panel-on-command
+[    1.046904] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-timing-switch-command
+[    1.046911] mdss_dsi_panel_get_dsc_cfg_np: cannot find dsc config node:
+[    1.047022] mdss_dsi_parse_panel_features: partial_update_enabled=0
+[    1.047031] mdss_dsi_parse_panel_features: ulps feature enabled
+[    1.047038] mdss_dsi_parse_panel_features: ulps during suspend feature enabled
+[    1.047047] mdss_dsi_parse_dms_config: dynamic switch feature enabled: 0
+[    1.047065] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-on
+[    1.047074] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-off
+[    1.047100] no supply entry present: qcom,panel-supply-entries
+[    1.047108] mdss_dsi_parse_ctrl_params:4101, Unable to read Phy Strength ctrl settings
+[    1.047116] mdss_dsi_parse_ctrl_params:4115, Unable to read Phy regulator settings
+[    1.047125] mdss_dsi_parse_ctrl_params:4135, Unable to read Phy lane configure settings
+[    1.047137] mdss_dsi_parse_ctrl_params:4167 Unable to read qcom,display-id, data=00000000,len=-345425332
+[    1.047152] mdss_dsi_parse_gpio_params: bklt_en gpio not specified
+[    1.047160] mdss_dsi_parse_gpio_params: ext vdd gpio not specified
+[    1.047196] msm_mdss_get_res_byname: 'dsi_phy_regulator' resource not found
+[    1.047212] mdss_dsi_retrieve_ctrl_resources+0xe0/0x294->msm_mdss_ioremap_byname: 'dsi_phy_regulator' msm_mdss_get_res_byname failed
+[    1.047219] mdss_dsi_retrieve_ctrl_resources: ctrl_base=c72e7000 ctrl_size=300 phy_base=c72e9400 phy_size=400
+[    1.047482] dsi_panel_device_register: Continuous splash enabled
+[    1.047738] mdss_register_panel: adding framebuffer device 1a94000.qcom,mdss_dsi_ctrl0
+[    1.068980] mdss_dsi_ctrl_probe: Dsi Ctrl->0 initialized, DSI rev:0x10040002, PHY rev:0x3
+[    1.069635] mdss_dsi_status_init: DSI status check interval:5000
+[    1.070212] mdss_register_panel: adding framebuffer device soc:qcom,mdss_wb_panel
+[    1.071373] mdss_fb_probe: fb0: split_mode:0 left:0 right:0
+[    1.072346] mdss_fb_register: FrameBuffer[0] 474x474 registered successfully!
+[    1.082631] mdss_fb_probe: fb1: split_mode:0 left:0 right:0
+[    1.082849] mdss_fb_register: FrameBuffer[1] 640x640 registered successfully!
+[    1.083000] mdss_mdp_splash_parse_dt: splash mem child node is not present
+[    1.083279] qcom-sps-dma 7884000.qcom,sps-dma: dma_async_device_register: device has no channels!
+[    1.083337] qcom-sps-dma 7ac4000.qcom,sps-dma: dma_async_device_register: device has no channels!
+[    1.084102] Can't get label property
+[    1.084120] msm_hang_detect: probe of soc:qcom,chd failed with error -22
+[    1.086125] IPC_RTR: msm_ipc_router_smd_driver_register Already driver registered IPCRTR
+[    1.086166] IPC_RTR: msm_ipc_router_smd_driver_register Already driver registered IPCRTR
+[    1.094829] scm_call failed: func id 0x2000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    1.094850] batched_hyp_assign: Failed to assign memory protection, ret = -5
+[    1.094861] memshare: hyp_assign_phys failed size=2097152 err=-5
+[    1.094930] memshare_child soc:qcom,memshare:qcom,client_1: for memshare_GPS segments only will be dumped.
+[    1.095466] memshare_child soc:qcom,memshare:qcom,client_2: for memshare_FTM segments only will be dumped.
+[    1.104817] scm_call failed: func id 0x2000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    1.104837] batched_hyp_assign: Failed to assign memory protection, ret = -5
+[    1.104848] memshare: hyp_assign_phys failed size=5242880 err=-5
+[    1.104875] memshare_child soc:qcom,memshare:qcom,client_3: for memshare_DIAG segments only will be dumped.
+[    1.106955] minidump-id not found for adsp
+[    1.107182] minidump-id not found for wcnss
+[    1.107557] minidump-id not found for venus
+[    1.107583] subsys-pil-tz 1de0000.qcom,venus: for venus segments only will be dumped.
+[    1.109746] minidump-id not found for modem
+[    1.110899] msm-dcc b3000.dcc: DCC XPU is not specified
+[    1.113467] wcnss: wcnss_wlan probed in built-in mode
+[    1.114757] msm_serial 78b0000.serial: msm_serial: detected port #0
+[    1.114789] msm_serial 78b0000.serial: uartclk = 7372800
+[    1.114843] 78b0000.serial: ttyMSM0 at MMIO 0x78b0000 (irq = 67, base_baud = 460800) is a MSM
+[    1.114857] msm_serial: console setup on port #0
+[    1.921027] virt zone: sensor[quiet-therm-adc] read error:-22
+[    1.921032] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    2.965992] virt zone: sensor[quiet-therm-adc] read error:-22
+[    2.965996] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    4.003146] virt zone: sensor[quiet-therm-adc] read error:-22
+[    4.003150] thermal thermal_zone43: failed to read out thermal zone (-22)
+[    4.186910] console [ttyMSM0] enabled
+[    4.194531] msm_serial: driver initialized
+[    4.198168] uart_tx_gpio is not available
+[    4.201348] uart_rx_gpio is not available
+[    4.205370] uart_cts_gpio is not available
+[    4.209363] uart_rfr_gpio is not available
+[    4.213423] Wakeup irq not specified.
+[    4.218090] sps: BAM device 0x07ac4000 is not registered yet.
+[    4.221668] sps:BAM 0x07ac4000 is registered.[    4.229837] 7aef000.uart: ttyHS0 at MMIO 0x7aef000 (irq = 77, base_baud = 460800) is a MSM HS UART
+[    4.235055] msm_serial_hs module loaded
+[    4.244377] random: fast init done
+[    4.244485] random: crng init done
+[    4.249060] diag: MUX: unable to register pcie operations for proc: 0, err: -22
+[    4.250552] diag: MUX: unable to register PCIe operations, continuing with USB registrations for proc: 0, err: -22
+[    4.266796] diag: In __diag_glink_init, unable to register for glink channel DIAG_CTRL
+[    4.268379] diag: In __diag_glink_init, unable to register for glink channel DIAG_DATA
+[    4.276266] diag: In __diag_glink_init, unable to register for glink channel DIAG_CMD
+[    4.284158] diag: In __diag_glink_init, unable to register for glink channel DIAG_DCI_DATA
+[    4.292082] diag: In __diag_glink_init, unable to register for glink channel DIAG_DCI_CMD
+[    4.306719] iommu: Adding device 1c40000.qcom,kgsl-iommu:gfx3d_user to group 3
+[    4.312601] thermal thermal_zone43: binding zone skin-virtual-step with cdev thermal-devfreq-0 failed:-22
+[    4.330893] brd: module loaded
+[    4.338911] loop: module loaded
+[    4.339687] zram: Added device: zram0
+[    4.340952] lkdtm: No crash points registered, enable through debugfs
+[    4.345826] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x1001000
+[    4.351270] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE[    4.357525] QSEECOM: qseecom_probe: qseecom clocks handled by other sum
+[    4.365162] QSEECOM: qseecom_probe: qsee reentrancy support phase is not defined, setting to default 0
+[    4.371661] QSEECOM: qseecom_probe: qseecom.whitelist_support = 1
+[    4.381182] xu4_read_thermal_init
+[    4.387235] xu4_read_thermal_driver, ret=0
+[    4.389900] st21nfc_dev_init: Loading st21nfc driver (version 2.0.14)
+[    4.394362] i2c-msm-v2 7af6000.i2c: msm_bus_scale_register_client(mstr-id:84):0xc (ok)
+[    4.396228] QCE50: __qce_get_device_tree_data: BAM Apps EE is not defined, setting to default 1
+[    4.401358] qce 720000.qcedev: QTI Crypto 5.3.3 device found @0x720000
+[    4.401364] qce 720000.qcedev: CE device = 0x0 IO base, CE = c7aa0000 Consumer (IN) PIPE 2,
+[    4.401364] Producer (OUT) PIPE 3 IO base BAM = 00000000
+[    4.401364] BAM IRQ 89 Engines Availability = 0x2010853
+[    4.402225] sps:BAM 0x00704000 is registered.
+[    4.402225] sps:BAM 0x00704000 (va:0xc7b20000) enabled: ver:0x27, number of pipes:8
+[    4.402960] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000000704000 irq 89
+[    4.409039] QCE50: __qce_get_device_tree_data: BAM Apps EE is not defined, setting to default 1
+[    4.410755] qcrypto 720000.qcrypto: QTI Crypto 5.3.3 device found @0x720000
+[    4.410763] qcrypto 720000.qcrypto: CE device = 0x0 IO base, CE = c7b60000 Consumer (IN) PIPE 4,
+[    4.410763] Producer (OUT) PIPE 5 IO base BAM = 00000000
+[    4.410763] BAM IRQ 89 Engines Availability = 0x2010853
+[    4.411662] QCE50: qce_sps_init:  QTI MSM CE-BAM at 0x0000000000704000 irq 89
+[    4.423518] qcrypto 720000.qcrypto: qcrypto-ecb-aes
+[    4.423716] qcrypto 720000.qcrypto: qcrypto-cbc-aes
+[    4.423847] qcrypto 720000.qcrypto: qcrypto-ctr-aes
+[    4.424056] qcrypto 720000.qcrypto: qcrypto-ecb-des
+[    4.424182] qcrypto 720000.qcrypto: qcrypto-cbc-des
+[    4.424361] qcrypto 720000.qcrypto: qcrypto-ecb-3des
+[    4.424510] qcrypto 720000.qcrypto: qcrypto-cbc-3des
+[    4.424619] qcrypto 720000.qcrypto: qcrypto-xts-aes
+[    4.424730] qcrypto 720000.qcrypto: qcrypto-sha1
+[    4.424841] qcrypto 720000.qcrypto: qcrypto-sha256
+[    4.424954] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    4.425065] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    4.425175] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    4.425287] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    4.425398] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    4.425544] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    4.425656] qcrypto 720000.qcrypto: qcrypto-hmac-sha1
+[    4.425780] qcrypto 720000.qcrypto: qcrypto-hmac-sha256
+[    4.425944] qcrypto 720000.qcrypto: qcrypto-aes-ccm
+[    4.426072] qcrypto 720000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    4.427663] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
+[    4.427748] ICE IRQ = 83
+[    4.429970] sps: BAM device 0x07884000 is not registered yet.
+[    4.431349] sps:BAM 0x07884000 is registered.
+[    4.431350] sps:BAM 0x07884000 (va:0xc77a0000) enabled: ver:0x19, number of pipes:12
+[    4.431726] st54j_se spi1.0: st54j_se_probe entry
+[    4.431862] st54j_se spi1.0: st54j_se_probe: eSE is configured
+[    4.434181] sps:BAM 0x07ac4000 (va:0xc7620000) enabled: ver:0x19, number of pipes:12
+[    4.436265] libphy: Fixed MDIO Bus: probed
+[    4.436268] tun: Universal TUN/TAP device driver, 1.6
+[    4.436270] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    4.436359] PPP generic driver version 2.4.2
+[    4.436513] PPP BSD Compression module registered
+[    4.436517] PPP Deflate Compression module registered
+[    4.436535] PPP MPPE Compression module registered
+[    4.436539] NET: Registered protocol family 24
+[    4.438146] usbcore: registered new interface driver asix
+[    4.438209] usbcore: registered new interface driver ax88179_178a
+[    4.438251] usbcore: registered new interface driver cdc_ether
+[    4.438291] usbcore: registered new interface driver net1080
+[    4.438332] usbcore: registered new interface driver cdc_subset
+[    4.438373] usbcore: registered new interface driver zaurus
+[    4.438437] usbcore: registered new interface driver cdc_ncm
+[    4.438442] CHRDEV "uio" major number 233 goes below the dynamic allocation range
+[    4.439353] msm_sharedmem: sharedmem_register_qmi: qmi init successful
+[    4.444063] scm_call failed: func id 0x2000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    4.444069] batched_hyp_assign: Failed to assign memory protection, ret = -5
+[    4.444077] msm_sharedmem: setup_shared_ram_perms: hyp_assign_phys failed IPA=0x0160xbdc00000 size=1572864 err=-5
+[    4.444299] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
+[    4.445151] msm_otg 78db000.usb: msm_otg probe
+[    4.447384] msm_otg 78db000.usb: OTG regs = c7655000
+[    4.449753] CHRDEV "usbmon" major number 232 goes below the dynamic allocation range
+[    4.449863] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    4.449900] ehci-platform: EHCI generic platform driver
+[    4.450674] ehci-msm: Qualcomm On-Chip EHCI Host Controller
+[    4.451211] Unable to get vbus_otg
+[    4.451216] msm_hsusb_host msm_hsusb_host: unable to register with transceiver
+[    4.451374] usbcore: registered new interface driver cdc_acm
+[    4.451376] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    4.451435] usbcore: registered new interface driver usb-storage
+[    4.451592] usbcore: registered new interface driver usbserial
+[    4.451632] usbcore: registered new interface driver usb_ehset_test
+[    4.451675] CHRDEV "ttyGS" major number 231 goes below the dynamic allocation range
+[    4.452467] CHRDEV "rmnet_ctrl" major number 230 goes below the dynamic allocation range
+[    4.453961] mousedev: PS/2 mouse device common for all mice
+[    4.454137] [FTS_TS]fts_ts_init: Enter
+[    4.454572] i2c-msm-v2 78b8000.i2c: msm_bus_scale_register_client(mstr-id:86):0x10 (ok)
+[    4.454958] [FTS_TS/I]fts_ts_probe:Touch Screen(I2C BUS) driver probe...
+[    4.454962] [FTS_TS]fts_ts_probe_entry: Enter
+[    4.454964] [FTS_TS/I]fts_ts_probe_entry:Focaltech V3.2 20200422
+[    4.454966] [FTS_TS]fts_parse_dt: Enter
+[    4.454970] [FTS_TS/I]fts_get_dt_coords:display x(0 474) y(0 474)
+[    4.454975] [FTS_TS/I]fts_parse_dt:Orientation 0
+[    4.454985] [FTS_TS/I]fts_parse_dt:max touch number:5, irq gpio:65, reset gpio:64, ts_select gpio:-2
+[    4.454987] [FTS_TS]fts_parse_dt: Exit(1358)
+[    4.455177] [FTS_TS]fts_bus_init: Enter
+[    4.455180] [FTS_TS]fts_bus_init: Exit(175)
+[    4.455182] [FTS_TS]fts_input_init: Enter
+[    4.455413] input: fts_ts as /devices/platform/soc/78b8000.i2c/i2c-4/4-0038/input/input1
+[    4.455551] [FTS_TS]fts_input_init: Exit(862)
+[    4.455553] [FTS_TS]fts_gpio_configure: Enter
+[    4.455555] [FTS_TS/E]fts_gpio_configure:[GPIO]ts_select gpio not valid
+[    4.455579] [FTS_TS]fts_gpio_configure: Exit(1208)
+[    4.455966] [FTS_TS]fts_get_chip_types:verify id:0x2388
+[    4.455969] [FTS_TS/I]fts_get_ic_information:get ic information, chip id = 0x2388
+[    4.455981] [FTS_TS/I]fts_create_apk_debug_channel:Create proc entry success!
+[    4.456044] [FTS_TS/I]fts_create_sysfs:[EX]: sysfs_create_group() succeeded!!
+[    4.456061] [FTS_TS]fts_ex_mode_init:create sysfs(ex_mode) succeedfully
+[    4.456063] [FTS_TS]fts_gesture_init: Enter
+[    4.456075] [FTS_TS]fts_gesture_init: Exit(450)
+[    4.456077] [FTS_TS][TEST]fts_test_init: Enter
+[    4.456079] [FTS_TS/I][TEST]fts_test_func_init:init test function
+[    4.456083] [FTS_TS/I][TEST]fts_test_func_init:match test function,type:1e
+[    4.456089] [FTS_TS][TEST]fts_test_init:sysfs(test) create successfully
+[    4.456091] [FTS_TS][TEST]fts_test_init: Exit(2173)
+[    4.456095] [FTS_TS/I]fts_irq_registration:irq:269, flag:2002
+[    4.456301] [FTS_TS/I]fts_fwupg_init:fw upgrade init function
+[    4.456318] [FTS_TS]fts_ts_probe_entry: Exit(1756)
+[    4.456320] [FTS_TS/I]fts_ts_probe:Touch Screen(I2C BUS) driver probe successfully
+[    4.456324] [FTS_TS/I]fts_fwupg_work:FTS_AUTO_UPGRADE_EN is disabled, not upgrade when power on
+[    4.456398] [FTS_TS]fts_ts_init: Exit(2062)
+[    4.458058] input: qti-haptics as /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-01/200f000.qcom,spmi:qcom,pm660@1:qcom,haptics@c000/input/in2
+[    4.459877] qcom,qpnp-rtc 200f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc: rtc core: registered qpnp_rtc as rtc0
+[    4.460123] i2c /dev entries driver
+[    4.463652] iommu: Adding device 1d00000.qcom,vidc:non_secure_cb to group 4
+[    4.464417] iommu: Adding device 1d00000.qcom,vidc:secure_bitstream_cb to group 5
+[    4.465197] iommu: Adding device 1d00000.qcom,vidc:secure_pixel_cb to group 6
+[    4.465853] iommu: Adding device 1d00000.qcom,vidc:secure_non_pixel_cb to group 7
+[    4.471223] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb1 to group 8
+[    4.471466] CAM-SMMU cam_smmu_populate_sids:2081 __debug cnt = 6, cb->name: :vfe sid [0] = 1024
+[    4.471466] ,
+[    4.471970] CAM-SMMU cam_smmu_populate_sids:2081 __debug cnt = 6, cb->name: :vfe sid [1] = 9216
+[    4.471970] ,
+[    4.471970] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb3 to group 9
+[    4.472284] CAM-SMMU cam_smmu_populate_sids:2081 __debug cnt = 3, cb->name: :cpp sid [0] = 7168
+[    4.472284] ,
+[    4.472284] iommu: Adding device soc:qcom,cam_smmu:msm_cam_smmu_cb4 to group 10
+[    4.475040] CAM-SMMU cam_smmu_populate_sids:2081 __debug cnt = 3, cb->name: :jpeg_enc0 sid [0] = 6144
+[    4.475040] ,
+[    4.475041] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.477685] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.478019] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.478905] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.479202] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.479492] msm_camera_get_dt_vreg_data:1126 number of entries is 0 or not present in dts
+[    4.480485] msm_actuator_platform_probe:2011 msm_actuator_platform_probe: No/Error Actuator GPIOs
+[    4.481495] msm_eeprom_platform_probe failed 1816
+[    4.481985] msm_eeprom_platform_probe failed 1816
+[    4.488881] MSM-CPP cpp_init_hardware:1133 CPP HW Version: 0x40030002
+[    4.488889] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[    4.489128] MSM-CPP cpp_release_hardware:1214 cpp hw release done
+[    4.491926] CAM-SOC msm_camera_get_reg_base:870 err: mem resource vfe_fuse not found
+[    4.491928] CAM-SOC msm_camera_get_res_size:913 err: mem resource vfe_fuse not found
+[    4.492110] msm_vfe47_get_clks: cannot find camss_vfe_stream_clk
+[    4.493128] CAM-SOC msm_camera_get_reg_base:870 err: mem resource vfe_fuse not found
+[    4.493130] CAM-SOC msm_camera_get_res_size:913 err: mem resource vfe_fuse not found
+[    4.493303] msm_vfe47_get_clks: cannot find camss_vfe_stream_clk
+[    4.495956] __msm_jpeg_init:1591] Jpeg Device id 0
+[    4.495956] CHRDEV "jpeg0" major number 229 goes below the dynamic allocation range
+[    4.497064] usbcore: registered new interface driver uvcvideo
+[    4.497066] USB Video Class driver (1.1.1)
+[    4.503631] PMI: smblib_check_ov_condition: Couldn't get current voltage, rc=-61
+[    4.513926] QPNP SMB2 probed successfully usb:present=0 type=0 batt:present = 1 health = 1 charge = 1
+[    4.514444] i2c-msm-v2 78b6000.i2c: msm_bus_scale_register_client(mstr-id:86):0x15 (ok)
+[    4.515050] bq27z561-battery 2-0055: support ver. 1.2.0 enabled
+[    4.515188] i2c-msm-v2 78b6000.i2c: NACK: slave not responding, ensure its powered: msgs(n:2 cur:0 tx) bc(rx:2 tx:1) mode:FIFO slv_addr:0x55 MSTR_S0
+[    4.520473] thermal thermal_zone41: binding zone quiet-therm-step with cdev battery failed:-22
+[    4.542930] device-mapper: uevent: version 1.0.3
+[    4.543242] device-mapper: ioctl: 4.35.0-ioctl (2016-06-23) initialised: dm-devel@redhat.com
+[    4.543467] device-mapper: req-crypt: dm-req-crypt successfully initalized.
+[    4.543467] 
+[    4.544367] CHRDEV "bt" major number 228 goes below the dynamic allocation range
+[    4.544536] sdhci: Secure Digital Host Controller Interface driver
+[    4.544537] sdhci: Copyright(c) Pierre Ossman
+[    4.544539] sdhci-pltfm: SDHCI platform and OF driver helper
+[    4.545803] usbcore: registered new interface driver usbhid
+[    4.545805] usbhid: USB HID core driver
+[    4.545953] ashmem: initialized
+[    4.546112] qcom_ice_get_pdevice: found ice device e9dd69c0
+[    4.546114] qcom_ice_get_pdevice: matching platform device eab42200
+[    4.546487] sdhci_msm 7824900.sdhci: sdhci_msm_pm_qos_parse_cpu_groups: invalid mask 0xf0 of cpu group #1
+[    4.546491] sdhci_msm 7824900.sdhci: sdhci_msm_pm_qos_parse: PM QoS voting for cpu group will be disabled
+[    4.549081] qcom_ice 7803000.sdcc1ice: QC ICE 2.1.44 device found @0xc7728000
+[    4.549946] mmc0: SDHCI controller on 7824900.sdhci [7824900.sdhci] using 32-bit ADMA in CMDQ mode
+[    4.769542] mmc0: Out-of-interrupt timeout is 100[ms]
+[    4.769545] mmc0: BKOPS_EN equals 0x0
+[    4.769548] mmc0: eMMC FW version: 0x27
+[    4.769550] mmc0: cache barrier support 0 flush policy 0
+[    4.788247] mmc0: new HS400 MMC card at address 0001
+[    4.789314] mmcblk0: mmc0:0001 Biwin  7.28 GiB 
+[    4.789740] mmcblk0boot0: mmc0:0001 Biwin  partition 1 4.00 MiB
+[    4.790067] mmcblk0boot1: mmc0:0001 Biwin  partition 2 4.00 MiB
+[    4.790417] mmcblk0rpmb: mmc0:0001 Biwin  partition 3 4.00 MiB
+[    4.793206]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34
+[    4.805682] sdhci_msm 7864900.sdhci: sdhci_msm_probe: ICE device is not enabled
+[    4.806151] sdhci_msm 7864900.sdhci: sdhci_msm_pm_qos_parse_cpu_groups: invalid mask 0xf0 of cpu group #1
+[    4.806155] sdhci_msm 7864900.sdhci: sdhci_msm_pm_qos_parse: PM QoS voting for cpu group will be disabled
+[    4.820314] mmc1: SDHCI controller on 7864900.sdhci [7864900.sdhci] using 32-bit ADMA in legacy mode
+[    5.062563] oculus,rt600_ctrl soc:oculus,rt600_ctrl: rt600-ctrl probe success.
+[    5.063091] tz_log 8600720.tz-log: Hyp log service is not supported
+[    5.071742] fan49103-bob 2-0070: fan49103_write_reg_byte reg  1 value 47
+[    5.080715] CHRDEV "stp0l" major number 227 goes below the dynamic allocation range
+[    5.081619] qpnp_coincell_charger_show_state: enabled=N, voltage=2500 mV, resistance=2100 ohm
+[    5.085728] bimc-bwmon 408000.qcom,cpu-bwmon: BW HWmon governor registered.
+[    5.146432] opt3001 4-0045: Found TI OPT3001
+[    5.147362] input: opt3001_als as /devices/virtual/input/input3
+[    5.147605] opt3001 4-0045: opt3001 probe success
+[    5.147889] coresight-tmc 6028000.tmc: failed to get flush cti
+[    5.147892] coresight-tmc 6028000.tmc: failed to get reset cti
+[    5.147898] coresight-tmc 6028000.tmc: failed to get csr, defer probe
+[    5.148201] coresight-tmc 6027000.tmc: failed to get flush cti
+[    5.148204] coresight-tmc 6027000.tmc: failed to get reset cti
+[    5.148209] coresight-tmc 6027000.tmc: failed to get csr, defer probe
+[    5.151845] coresight-etm4x 61bc000.etm: CPU0: Cortex-A53 ETM v4.0 initialized
+[    5.152549] coresight-etm4x 61bd000.etm: CPU1: Cortex-A53 ETM v4.0 initialized
+[    5.158448] coresight-etm4x 61be000.etm: CPU2: Cortex-A53 ETM v4.0 initialized
+[    5.159150] coresight-etm4x 61bf000.etm: CPU3: Cortex-A53 ETM v4.0 initialized
+[    5.159491] coresight-replicator-qcom 6026000.replicator: REPLICATOR 1.0 initialized
+[    5.159778] coresight-stm 6002000.stm: stm_register_device failed, probing deffered
+[    5.161313] OF: graph: no port node found in /soc/cti@6010000
+[    5.161538] OF: graph: no port node found in /soc/cti@6011000
+[    5.161766] OF: graph: no port node found in /soc/cti@6012000
+[    5.162001] OF: graph: no port node found in /soc/cti@6013000
+[    5.162208] OF: graph: no port node found in /soc/cti@6014000
+[    5.162431] OF: graph: no port node found in /soc/cti@6015000
+[    5.162640] OF: graph: no port node found in /soc/cti@6016000
+[    5.162867] OF: graph: no port node found in /soc/cti@6017000
+[    5.163107] OF: graph: no port node found in /soc/cti@6018000
+[    5.163319] OF: graph: no port node found in /soc/cti@6019000
+[    5.163545] OF: graph: no port node found in /soc/cti@601a000
+[    5.163757] OF: graph: no port node found in /soc/cti@601b000
+[    5.163999] OF: graph: no port node found in /soc/cti@601c000
+[    5.164213] OF: graph: no port node found in /soc/cti@601d000
+[    5.164442] OF: graph: no port node found in /soc/cti@601e000
+[    5.164656] OF: graph: no port node found in /soc/cti@601f000
+[    5.164902] OF: graph: no port node found in /soc/cti@61b8000
+[    5.165160] OF: graph: no port node found in /soc/cti@61b9000
+[    5.165400] OF: graph: no port node found in /soc/cti@61ba000
+[    5.165631] OF: graph: no port node found in /soc/cti@61bb000
+[    5.165883] OF: graph: no port node found in /soc/cti@6124000
+[    5.166119] OF: graph: no port node found in /soc/cti@6134000
+[    5.166352] OF: graph: no port node found in /soc/cti@6139000
+[    5.166574] OF: graph: no port node found in /soc/cti@613c000
+[    5.166811] OF: graph: no port node found in /soc/cti@610c000
+[    5.167776] coresight-dbgui 6108000.dbgui: DebugUI capture enabled
+[    5.167946] coresight-dbgui 6108000.dbgui: DebugUI initializaed
+[    5.168578] OF: graph: no port node found in /soc/csr@6001000
+[    5.168690] coresight-csr 6001000.csr: CSR initialized: coresight-csr
+[    5.169189] OF: graph: no port node found in /soc/hwevent@6101000
+[    5.169333] coresight-hwevent 6101000.hwevent: Hardware Event driver initialized
+[    5.170382] coresight-remote-etm soc:wcn_etm0: Remote ETM initialized
+[    5.170895] coresight-remote-etm soc:rpm_etm0: Remote ETM initialized
+[    5.171348] coresight-remote-etm soc:audio_etm0: Remote ETM initialized
+[    5.171806] coresight-remote-etm soc:modem_etm0: Remote ETM initialized
+[    5.172787] CHRDEV "sensors" major number 226 goes below the dynamic allocation range
+[    5.173446] usbcore: registered new interface driver snd-usb-audio
+[    5.174243] aw8896_i2c_init: aw8896 driver version v1.0.7
+[    5.174444] u32 classifier
+[    5.174446]     Actions configured
+[    5.174453] Netfilter messages via NETLINK v0.30.
+[    5.174757] nf_conntrack version 0.5.0 (14336 buckets, 57344 max)
+[    5.175100] ctnetlink v0.93: registering with nfnetlink.
+[    5.176136] xt_time: kernel timezone is -0000
+[    5.176209] IPv4 over IPsec tunneling driver
+[    5.176891] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    5.177379] arp_tables: arp_tables: (C) 2002 David S. Miller
+[    5.177414] Initializing XFRM netlink socket
+[    5.178116] NET: Registered protocol family 10
+[    5.179374] mip6: Mobile IPv6
+[    5.179396] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    5.180450] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    5.181662] NET: Registered protocol family 17
+[    5.181684] NET: Registered protocol family 15
+[    5.181714] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    5.181718] Ebtables v2.0 registered
+[    5.181807] l2tp_core: L2TP core driver, V2.0
+[    5.181818] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    5.181820] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    5.181837] l2tp_netlink: L2TP netlink interface
+[    5.181870] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    5.181903] l2tp_debugfs: L2TP debugfs support
+[    5.181905] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    5.181937] Key type dns_resolver registered
+[    5.182782] NET: Registered protocol family 27
+[    5.191181] minidump-id not found for adsp
+[    5.191639] subsys-pil-tz c200000.qcom,lpass: for adsp segments only will be dumped.
+[    5.193351] minidump-id not found for wcnss
+[    5.193579] subsys-pil-tz a21b000.qcom,pronto: for wcnss segments only will be dumped.
+[    5.194962] minidump-id not found for modem
+[    5.195636] pil-q6v5-mss 4080000.qcom,mss: for modem segments only will be dumped.
+[    5.195748] pil-q6v5-mss 4080000.qcom,mss: for md_modem segments only will be dumped.
+[    5.197588] msm_otg 78db000.usb: phy_reset: success
+[    5.210756] FG: fg_gen3_probe: battery SOC:50 voltage: 3772695uV temp: 260
+[    5.211727] qcom,fg-gen3 200f000.qcom,spmi:qcom,pm660@0:qpnp,fg: thermal_zone_of_sensor_register() failed rc:-19
+[    5.212016] CHRDEV "byte-cntr" major number 225 goes below the dynamic allocation range
+[    5.213933] sps:BAM 0x06044000 is registered.
+[    5.213934] CHRDEV "6002000.stm" major number 224 goes below the dynamic allocation range
+[    5.214265] coresight-stm 6002000.stm: STM32 initialized
+[    5.215433] Registering SWP/SWPB emulation handler
+[    5.215469] core_ctl: Creating CPU group 0
+[    5.215471] core_ctl: Init CPU0 state
+[    5.215473] core_ctl: Init CPU1 state
+[    5.215475] core_ctl: Init CPU2 state
+[    5.215476] core_ctl: Init CPU3 state
+[    5.216204] registered taskstats version 1
+[    5.216220] Loading compiled-in X.509 certificates
+[    5.219450] qcom,cc-debug-8952 1874000.qcom,cc-debug: Registered Debug Mux successfully
+[    5.220542] FG: fg_psy_get_property: unsupported property 4
+[    5.222570] msm_smem 86300000.qcom,smem: for smem segments only will be dumped.
+[    5.225843] iommu: Adding device soc:qcom,msm_fastrpc:qcom,msm_fastrpc_compute_cb to group 11
+[    5.227327] CHRDEV "adsprpc-smd" major number 223 goes below the dynamic allocation range
+[    5.229658] input: gpio-keys as /devices/platform/soc/soc:gpio_keys/input/input4
+[    5.236357] qcom,qpnp-rtc 200f000.qcom,spmi:qcom,pm660@0:qcom,pm660_rtc: setting system clock to 1970-01-01 00:00:22 UTC (22)
+[    5.237987] cpuidle: enable-method property 'psci' found operations
+[    5.237991] cpuidle: enable-method property 'psci' found operations
+[    5.237993] cpuidle: enable-method property 'psci' found operations
+[    5.237996] cpuidle: enable-method property 'psci' found operations
+[    5.238307] lpm_levels_of: idx 1 900
+[    5.238589] lpm_levels: register_cluster_lpm_stats()
+[    5.247163] RNDIS_IPA module is loaded.
+[    5.247164] clock_late_init: Removing enables held for handed-off clocks
+[    5.252516] apc_mem_acc_corner: disabling
+[    5.252594] dbu1: disabling
+[    5.252597] sd_vdd: disabling
+[    5.252601] vreg_sd_pad: disabling
+[    5.252612] ALSA device list:
+[    5.252614]   No soundcards found.
+[    5.311422] ipa_get_transport_type:2724 IPA HW is not supported
+[    5.313691] msm_otg 78db000.usb: USB in low power mode
+[    5.880229] of_batterydata_get_best_profile: No battery data found
+[    5.880231] FG: fg_get_batt_profile: couldn't find profile handle
+[    5.880234] FG: profile_load_work: profile for batt_id=7KOhms not found..using OTP,�[    6.388370] st21nfc_probe
+[    6.393331] EXT4-fs (mmcblk0p31): couldn't mount as ext3 due to feature incompatibilities
+[    6.393904] EXT4-fs (mmcblk0p31): couldn't mount as ext2 due to feature incompatibilities
+[    6.405668] EXT4-fs (mmcblk0p31): mounted filesystem with ordered data mode. Opts: (null)
+[    6.408718] VFS: Mounted root (ext4 filesystem) readonly on device 179:31.
+[    6.419289] Freeing unused kernel memory: 2048K
+[    6.448302] init: init first stage started!
+[    6.449836] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    6.507226] FG: fg_get_time_to_full_locked: battery profile is not loaded
+[    6.674347] init: [libfs_mgr]Returning avb_handle with status: 2
+[    6.674547] init: [libfs_mgr]AVB HASHTREE disabled on: /vendor
+[    6.685105] EXT4-fs (mmcblk0p33): mounted filesystem with ordered data mode. Opts: barrier=1,discard
+[    6.685408] init: [libfs_mgr]__mount(source=/dev/block/platform/soc/7824900.sdhci/by-name/vendor_a,target=/vendor,type=ext4)=0: Success
+[    6.694968] init: Skipped setting INIT_AVB_VERSION (not in recovery mode)
+[    6.706413] init: Loading SELinux policy
+[    7.002045] audit: type=1403 audit(24.259:2): policy loaded auid=4294967295 ses=4294967295
+[    7.002824] selinux: SELinux: Loaded policy from /vendor/etc/selinux/precompiled_sepolicy
+[    7.002824] 
+[    7.021667] selinux: SELinux: Loaded file_contexts
+[    7.021667] 
+[    7.024642] init: init second stage started!
+[    7.038314] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    7.039183] init: property_set("ro.boot.hardware", "mos") failed: property already set
+[    7.045061] init: property_set("ro.boot.console", "ttyMSM0") failed: property already set
+[    7.059875] selinux: SELinux: Loaded file_contexts
+[    7.059875] 
+[    7.062268] selinux: SELinux: Loaded property_contexts from /system/etc/selinux/plat_property_contexts & /vendor/etc/selinux/nonplat_property_conte.
+[    7.062268] 
+[    7.066912] init: Running restorecon...
+[    7.097626] init: waitid failed: No child processes
+[    7.098607] init: Couldn't load property file: Unable to open '/odm/default.prop': No such file or directory: No such file or directory
+[    7.102013] init: property_set("ro.oem_unlock_supported", "true") failed: property already set
+[    7.114330] init: Created socket '/dev/socket/property_service', mode 666, user 0, group 0
+[    7.122606] init: Parsing file /init.rc...
+[    7.132346] init: Added '/init.environ.rc' to import list
+[    7.134506] init: Added '/init.usb.rc' to import list
+[    7.140067] init: Added '/init.qcom.rc' to import list
+[    7.145011] init: Added '/vendor/etc/init/hw/init.qcom.rc' to import list
+[    7.150192] init: Added '/init.usb.configfs.rc' to import list
+[    7.156917] init: Added '/init.zygote32.rc' to import list
+[    7.164573] init: Parsing file /init.environ.rc...
+[    7.168832] init: Parsing file /init.usb.rc...
+[    7.174033] init: Parsing file /init.qcom.rc...
+[    7.177309] init: Unable to open '/init.qcom.rc': No such file or directory
+[    7.181777] init: /init.rc: 9: Could not import file '/init.qcom.rc': No such file or directory
+[    7.189604] init: Parsing file /vendor/etc/init/hw/init.qcom.rc...
+[    7.199265] init: Added '/vendor/etc/init/hw/init.qcom.usb.rc' to import list
+[    7.203651] init: Added '/vendor/etc/init/hw/init.msm.usb.configfs.rc' to import list
+[    7.210840] init: Added '/vendor/etc/init/hw/init.target.rc' to import list
+[    7.218621] init: Added '/vendor/etc/init/hw/init.qcom.factory.rc' to import list
+[    7.225411] init: Added '/vendor/etc/init/hw/init.qcom.test.rc' to import list
+[    7.234618] init: /vendor/etc/init/hw/init.qcom.rc: 661: user requires 1 argument
+[    7.242274] init: Parsing file /vendor/etc/init/hw/init.qcom.usb.rc...
+[    7.257342] init: Parsing file /vendor/etc/init/hw/init.msm.usb.configfs.rc...
+[    7.263226] init: Parsing file /vendor/etc/init/hw/init.target.rc...
+[    7.264968] init: /vendor/etc/init/hw/init.target.rc: 176: ignored duplicate definition of service 'time_daemon'
+[    7.270273] init: /vendor/etc/init/hw/init.target.rc: 242: invalid keyword 'load_all_props'
+[    7.280695] init: /vendor/etc/init/hw/init.target.rc: 368: invalid keyword 'interface'
+[    7.288244] init: /vendor/etc/init/hw/init.target.rc: 369: invalid keyword 'interface'
+[    7.296385] init: Parsing file /vendor/etc/init/hw/init.qcom.factory.rc...
+[    7.305266] init: Parsing file /vendor/etc/init/hw/init.qcom.test.rc...
+[    7.311838] init: Parsing file /init.usb.configfs.rc...
+[    7.319239] init: Parsing file /init.zygote32.rc...
+[    7.323513] init: Parsing directory /system/etc/init...
+[    7.328211] init: Parsing file /system/etc/init/android.hidl.allocator@1.0-service.rc...
+[    7.333369] init: Parsing file /system/etc/init/atrace.rc...
+[    7.342461] init: Parsing file /system/etc/init/atrace_userdebug.rc...
+[    7.347433] init: Parsing file /system/etc/init/audiocapture.rc...
+[    7.353675] init: Parsing file /system/etc/init/audioserver.rc...
+[    7.359870] init: Parsing file /system/etc/init/bootanim.rc...
+[    7.365962] init: Parsing file /system/etc/init/bootstat.rc...
+[    7.371999] init: Parsing file /system/etc/init/cameraserver.rc...
+[    7.377531] init: Parsing file /system/etc/init/drmserver.rc...
+[    7.383679] init: Parsing file /system/etc/init/dumpstate.rc...
+[    7.389433] init: Parsing file /system/etc/init/gatekeeperd.rc...
+[    7.395417] init: Parsing file /system/etc/init/hwservicemanager.rc...
+[    7.401645] init: Parsing file /system/etc/init/init-debug.rc...
+[    7.407972] init: Parsing file /system/etc/init/init.qti.fm.rc...
+[    7.414170] init: Parsing file /system/etc/init/installd.rc...
+[    7.420584] init: Parsing file /system/etc/init/keystore.rc...
+[    7.425914] init: Parsing file /system/etc/init/lmkd.rc...
+[    7.431792] init: Parsing file /system/etc/init/logcatd.rc...
+[    7.437348] init: Parsing file /system/etc/init/logd.rc...
+[    7.443145] init: Parsing file /system/etc/init/logtagd.rc...
+[    7.448330] init: Parsing file /system/etc/init/mdnsd.rc...
+[    7.454228] init: Parsing file /system/etc/init/mediadrmserver.rc...
+[    7.459565] init: Parsing file /system/etc/init/mediaextractor.rc...
+[    7.466196] init: Parsing file /system/etc/init/mediametrics.rc...
+[    7.472518] init: Parsing file /system/etc/init/mediaserver.rc...
+[    7.478549] init: Parsing file /system/etc/init/mtpd.rc...
+[    7.484711] init: Parsing file /system/etc/init/netd.rc...
+[    7.490123] init: Parsing file /system/etc/init/perfprofd.rc...
+[    7.495509] init: Parsing file /system/etc/init/racoon.rc...
+[    7.501422] init: Parsing file /system/etc/init/recovery-persist.rc...
+[    7.507214] init: Parsing file /system/etc/init/recovery-refresh.rc...
+[    7.513542] init: Parsing file /system/etc/init/servicemanager.rc...
+[    7.520155] init: Parsing file /system/etc/init/storaged.rc...
+[    7.526604] init: Parsing file /system/etc/init/surfaceflinger.rc...
+[    7.532336] init: Parsing file /system/etc/init/thermalservice.rc...
+[    7.538694] init: Parsing file /system/etc/init/tombstoned.rc...
+[    7.545270] init: Parsing file /system/etc/init/uncrypt.rc...
+[    7.551224] init: Parsing file /system/etc/init/update_engine.rc...
+[    7.556757] init: Parsing file /system/etc/init/update_verifier.rc...
+[    7.562877] init: Parsing file /system/etc/init/vdc.rc...
+[    7.569395] init: Parsing file /system/etc/init/vold.rc...
+[    7.574831] init: Parsing file /system/etc/init/webview_zygote32.rc...
+[    7.580260] init: Parsing file /system/etc/init/wifi-events.rc...
+[    7.586845] init: Parsing file /system/etc/init/wificond.rc...
+[    7.592936] init: Parsing directory /vendor/etc/init...
+[    7.598199] init: Parsing file /vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc...
+[    7.603821] init: Parsing file /vendor/etc/init/android.hardware.boot@1.0-service.rc...
+[    7.612760] init: Parsing file /vendor/etc/init/android.hardware.camera.provider@2.4-service.rc...
+[    7.620462] init: Parsing file /vendor/etc/init/android.hardware.cas@1.0-service.rc...
+[    7.629440] init: Parsing file /vendor/etc/init/android.hardware.configstore@1.0-service.rc...
+[    7.637406] init: Parsing file /vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc...
+[    7.645974] init: Parsing file /vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc...
+[    7.655017] init: Parsing file /vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc...
+[    7.664275] init: Parsing file /vendor/etc/init/android.hardware.health@1.0-service.rc...
+[    7.673346] init: Parsing file /vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc...
+[    7.681422] init: Parsing file /vendor/etc/init/android.hardware.light@2.0-service.rc...
+[    7.690200] init: Parsing file /vendor/etc/init/android.hardware.media.omx@1.0-service.rc...
+[    7.698347] init: Parsing file /vendor/etc/init/android.hardware.power@1.0-service.rc...
+[    7.706765] init: Parsing file /vendor/etc/init/android.hardware.thermal@1.0-service.rc...
+[    7.714844] init: Parsing file /vendor/etc/init/android.hardware.usb@1.0-service.rc...
+[    7.722888] init: Parsing file /vendor/etc/init/android.hardware.wifi@1.0-service.rc...
+[    7.730819] init: Parsing file /vendor/etc/init/commandrouter.rc...
+[    7.738639] init: Parsing file /vendor/etc/init/devicecertserver.rc...
+[    7.745020] init: Parsing file /vendor/etc/init/hal-server.rc...
+[    7.751694] init: Parsing file /vendor/etc/init/hostapd.android.rc...
+[    7.757799] init: Parsing file /vendor/etc/init/init.config_swap.rc...
+[    7.764058] init: Parsing file /vendor/etc/init/init.ftrace_enablement.rc...
+[    7.770431] init: Parsing file /vendor/etc/init/init.rt600.rc...
+[    7.777631] init: Parsing file /vendor/etc/init/rild.rc...
+[    7.783766] init: Parsing file /vendor/etc/init/vendor.facebook.hardware.aod_proxy@1.0-service.rc...
+[    7.788939] init: Parsing file /vendor/etc/init/vendor.facebook.hardware.foo@1.0-service.rc...
+[    7.798217] init: Parsing file /vendor/etc/init/vendor.facebook.hardware.mfi@1.0-service.rc...
+[    7.806671] init: Parsing file /vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc...
+[    7.815249] init: Parsing file /vendor/etc/init/vendor.qti.gnss@2.1-service.rc...
+[    7.823838] init: Parsing file /vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc...
+[    7.831223] init: Parsing file /vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc...
+[    7.839712] init: Parsing file /vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc...
+[    7.848259] init: Parsing file /vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc...
+[    7.856312] init: Parsing file /vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc...
+[    7.865250] init: Parsing file /vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc...
+[    7.874635] init: Parsing file /vendor/etc/init/vendor.qti.hardware.vibrator@1.2-service.rc...
+[    7.883568] init: Parsing file /vendor/etc/init/vndservicemanager.rc...
+[    7.892251] init: Parsing file /odm/etc/init...
+[    7.898134] init: Unable to open '/odm/etc/init': No such file or directory
+[    7.902825] init: processing action (early-init) from (/init.rc:14)
+[    7.912156] init: starting service 'ueventd'...
+[    7.917243] init: processing action (early-init) from (/vendor/etc/init/hw/init.qcom.rc:34)
+[    7.920825] ueventd: ueventd started!
+[    7.920919] init: processing action (early-init) from (/vendor/etc/init/hw/init.target.rc:30)
+[    7.922180] init: starting service 'exec 1 (/vendor/bin/modprobe -a -d /vendor/lib/modules audio_apr audio_adsp_loader audio_q6_notifier audio_q6 a.
+[    7.923440] init: SVC_EXEC pid 384 (uid 0 gid 0+0 context u:r:vendor_modprobe:s0) started; waiting...
+[    7.980777] ueventd: Parsing file /ueventd.rc...
+[    7.994466] ueventd: Parsing file /vendor/ueventd.rc...
+[    7.998741] ueventd: Parsing file /odm/ueventd.rc...
+[    7.999514] ueventd: Unable to open '/odm/ueventd.rc': No such file or directory
+[    8.004894] ueventd: Parsing file /ueventd.qcom.rc...
+[    8.012251] ueventd: Unable to open '/ueventd.qcom.rc': No such file or directory
+[    8.025398] selinux: SELinux: Loaded file_contexts
+[    8.025398] 
+[    8.056765] q6_notifier_dlkm: loading out-of-tree module taints kernel.
+[    8.057479] audio_notifier_init: PDR register failed, ret = -19, disable service
+[    8.059415] FG: fg_get_time_to_full_locked: battery profile is not loaded
+[    8.072051] apr_dlkm: no symbol version for audio_notifier_register
+[    8.078076] audio_notifer_reg_service: service SSR_ADSP is in use
+[    8.082702] audio_notifer_reg_service: service SSR_MODEM is in use
+[    8.131621] CHRDEV "avtimer" major number 222 goes below the dynamic allocation range
+[    8.225626] msm-dai-tdm soc:qcom,msm-dai-tdm-pri-rx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-pri-rx group_id: 0x9100
+[    8.226444] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-pri-rx:qcom,msm-dai-q6-tdm-pri-rx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-pri-r0
+[    8.236367] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-pri-rx:qcom,msm-dai-q6-tdm-pri-rx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.254699] msm-dai-tdm soc:qcom,msm-dai-tdm-pri-tx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-pri-tx group_id: 0x9101
+[    8.266815] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-pri-tx:qcom,msm-dai-q6-tdm-pri-tx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-pri-t1
+[    8.277882] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-pri-tx:qcom,msm-dai-q6-tdm-pri-tx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.296139] msm-dai-tdm soc:qcom,msm-dai-tdm-sec-rx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-sec-rx group_id: 0x9110
+[    8.308499] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-sec-rx:qcom,msm-dai-q6-tdm-sec-rx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-sec-r0
+[    8.319385] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-sec-rx:qcom,msm-dai-q6-tdm-sec-rx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.336684] msm-dai-tdm soc:qcom,msm-dai-tdm-sec-tx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-sec-tx group_id: 0x9111
+[    8.349934] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-sec-tx:qcom,msm-dai-q6-tdm-sec-tx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-sec-t1
+[    8.360859] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-sec-tx:qcom,msm-dai-q6-tdm-sec-tx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.378377] msm-dai-tdm soc:qcom,msm-dai-tdm-tert-rx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-tert-rx group_id: 0x9120
+[    8.387706] selinux: SELinux: Loaded file_contexts
+[    8.387706] 
+[    8.403031] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-tert-rx:qcom,msm-dai-q6-tdm-tert-rx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-ter0
+[    8.408239] selinux: SELinux: Loaded file_contexts
+[    8.408239] 
+[    8.416737] selinux: SELinux: Loaded file_contexts
+[    8.416737] 
+[    8.432261] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-tert-rx:qcom,msm-dai-q6-tdm-tert-rx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.439734] selinux: SELinux: Loaded file_contexts
+[    8.439734] 
+[    8.439970] msm-dai-tdm soc:qcom,msm-dai-tdm-tert-tx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-tert-tx group_id: 0x9121
+[    8.442044] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-tert-tx:qcom,msm-dai-q6-tdm-tert-tx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-ter1
+[    8.442058] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-tert-tx:qcom,msm-dai-q6-tdm-tert-tx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.442610] msm-dai-tdm soc:qcom,msm-dai-tdm-quat-rx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-quat-rx group_id: 0x9130
+[    8.443741] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quat-rx:qcom,msm-dai-q6-tdm-quat-rx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-qua0
+[    8.443755] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quat-rx:qcom,msm-dai-q6-tdm-quat-rx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.444359] msm-dai-tdm soc:qcom,msm-dai-tdm-quat-tx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-quat-tx group_id: 0x9131
+[    8.445123] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quat-tx:qcom,msm-dai-q6-tdm-quat-tx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-qua1
+[    8.445137] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quat-tx:qcom,msm-dai-q6-tdm-quat-tx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.445205] msm-dai-tdm soc:qcom,msm-dai-tdm-quin-rx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-quin-rx group_id: 0x9140
+[    8.445874] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quin-rx:qcom,msm-dai-q6-tdm-quin-rx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-qui0
+[    8.445887] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quin-rx:qcom,msm-dai-q6-tdm-quin-rx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.445957] msm-dai-tdm soc:qcom,msm-dai-tdm-quin-tx: msm_dai_tdm_q6_probe: dev_name: soc:qcom,msm-dai-tdm-quin-tx group_id: 0x9141
+[    8.446672] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quin-tx:qcom,msm-dai-q6-tdm-quin-tx-0: msm_dai_q6_tdm_dev_probe: dev_name: soc:qcom,msm-dai-tdm-qui1
+[    8.446686] msm-dai-q6-tdm soc:qcom,msm-dai-tdm-quin-tx:qcom,msm-dai-q6-tdm-quin-tx-0: msm_dai_q6_tdm_dev_probe: Custom tdm header not supported
+[    8.463659] selinux: SELinux: Loaded file_contexts
+[    8.463659] 
+[    8.545040] hdmi_dlkm: Unknown symbol msm_ext_disp_register_audio_codec (err 0)
+[    8.623368] ueventd (386) used greatest stack depth: 5668 bytes left
+[    8.629592] ueventd (387) used greatest stack depth: 5508 bytes left
+[    8.633942] ueventd (389) used greatest stack depth: 5212 bytes left
+[    8.698355] msm_digital_codec c0f0000.msm_dig_codec: Adsp is not loaded yet 0
+[    8.734186] msm_digital_codec c0f0000.msm_dig_codec: Adsp is not loaded yet 0
+[    8.754858] msm8952-asoc-wcd c051000.sound: msm8952_asoc_machine_probe:of read string qcom,msm-ext-pa i 0 ret 0
+[    8.754937] msm8952-asoc-wcd c051000.sound: msm8952_asoc_machine_probe: missing qcom,msm-spk-ext-pa in dt node
+[    8.763890] msm8952-asoc-wcd c051000.sound: is_ext_spk_gpio_support: missing qcom,msm-spk-ext-pa in dt node
+[    8.773937] msm8952-asoc-wcd c051000.sound: Headset is using internal micbias
+[    8.784387] msm8952-asoc-wcd c051000.sound: ASoC: platform /soc/qcom,msm-pcm-voice not registered
+[    8.790846] msm8952-asoc-wcd c051000.sound: snd_soc_register_card failed (-517)
+[    8.808506] modprobe (384) used greatest stack depth: 4148 bytes left
+[    8.808765] init: Service 'exec 1 (/vendor/bin/modprobe -a -d /vendor/lib/modules audio_apr audio_adsp_loader audio_q6_notifier audio_q6 audio_usf s
+[    8.836881] init: processing action (wait_for_coldboot_done) from (<Builtin Action>:0)
+[   10.312042] ueventd: Coldboot took 2.286 seconds
+[   10.316290] init: Command 'wait_for_coldboot_done' action=wait_for_coldboot_done (<Builtin Action>:0) returned 0 took 1458ms.
+[   10.316550] init: processing action (mix_hwrng_into_linux_rng) from (<Builtin Action>:0)
+[   10.328785] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   10.335489] init: processing action (set_mmap_rnd_bits) from (<Builtin Action>:0)
+[   10.342048] init: processing action (set_kptr_restrict) from (<Builtin Action>:0)
+[   10.349644] init: processing action (keychord_init) from (<Builtin Action>:0)
+[   10.356813] init: could not open /dev/keychord: No such file or directory
+[   10.363905] init: processing action (console_init) from (<Builtin Action>:0)
+[   10.370692] init: processing action (init) from (/init.rc:37)
+[   10.378048] init: Unable to open '/default.prop': Too many symbolic links encountered
+[   10.386748] Trying to create more than 5 SchedTune boosting groups
+[   10.397186] audit: type=1400 audit(27.659:3): avc:  denied  { write } for  pid=1 comm="init" name="cpu" dev="proc" ino=4026532045 scontext=u:r:init1
+[   10.397460] audit: type=1400 audit(27.659:4): avc:  denied  { add_name } for  pid=1 comm="init" name="alignment" scontext=u:r:init:s0 tcontext=u:ob1
+[   10.415355] audit: type=1400 audit(27.679:5): avc:  denied  { create } for  pid=1 comm="init" name="alignment" scontext=u:r:init:s0 tcontext=u:obje1
+[   10.446368] init: Unable to open '/proc/sys/abi/swp': No such file or directory
+[   10.448342] init: Unable to open '/sys/class/leds/vibrator/trigger': No such file or directory
+[   10.455406] init: processing action (init) from (/init.environ.rc:2)
+[   10.464054] init: processing action (init) from (/vendor/etc/init/hw/init.qcom.rc:40)
+[   10.474475] init: processing action (init) from (/vendor/etc/init/hw/init.target.rc:88)
+[   10.478351] init: processing action (mix_hwrng_into_linux_rng) from (<Builtin Action>:0)
+[   10.486610] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[   10.494309] init: processing action (late-init) from (/init.rc:274)
+[   10.500680] init: processing action (queue_property_triggers) from (<Builtin Action>:0)
+[   10.506923] init: processing action (fs) from (/vendor/etc/init/hw/init.target.rc:38)
+[   10.519306] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/bootdevice/by-name/userdata
+[   10.522910] init: [libfs_mgr]Filesystem on /dev/block/bootdevice/by-name/userdata was not cleanly shutdown; state flags: 0x1, incompat feature flag6
+[   10.533239] EXT4-fs (mmcblk0p54): Ignoring removed nomblk_io_submit option
+[   10.909154] EXT4-fs (mmcblk0p54): 49 orphan inodes deleted
+[   10.909188] EXT4-fs (mmcblk0p54): recovery complete
+[   10.933482] EXT4-fs (mmcblk0p54): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[   10.933723] init: [libfs_mgr]check_fs(): mount(/dev/block/bootdevice/by-name/userdata,/data,ext4)=0: Success
+[   10.965692] init: [libfs_mgr]check_fs(): unmount(/data) succeeded
+[   10.966008] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/bootdevice/by-name/userdata
+[   11.330555] e2fsck: e2fsck 1.43.3 (04-Sep-2016)
+[   11.330555] 
+[   11.330633] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[   11.330633] 
+[   11.335637] e2fsck: Pass 2: Checking directory structure
+[   11.335637] 
+[   11.342697] e2fsck: Pass 3: Checking directory connectivity
+[   11.342697] 
+[   11.349613] e2fsck: Pass 4: Checking reference counts
+[   11.349613] 
+[   11.356767] e2fsck: Pass 5: Checking group summary information
+[   11.356767] 
+[   11.363084] e2fsck: /dev/block/bootdevice/by-name/userdata: 3133/247504 files (3.1% non-contiguous), 55867/989493 blocks
+[   11.363084] 
+[   11.371341] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/bootdevice/by-name/userdata
+[   11.389787] EXT4-fs (mmcblk0p54): mounted filesystem with ordered data mode. Opts: barrier=1,noauto_da_alloc,discard
+[   11.392205] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/userdata,target=/data,type=ext4)=0: Success
+[   11.402635] init: [libfs_mgr]/data is file encrypted
+[   11.422139] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/modem_a,target=/firmware,type=vfat)=0: Success
+[   11.422952] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/bootdevice/by-name/dsp_a
+[   11.436555] EXT4-fs (mmcblk0p14): mounted filesystem with ordered data mode. Opts: barrier=1
+[   11.441027] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/dsp_a,target=/dsp,type=ext4)=0: Success
+[   11.450365] init (390) used greatest stack depth: 3872 bytes left
+[   11.450559] init: Parsing file /odm/etc/init...
+[   11.450598] init: Unable to open '/odm/etc/init': No such file or directory
+[   11.450661] init: Keyring created with id 335356160 in process 1
+[   11.450732] init: Command 'mount_all /vendor/etc/fstab.qcom' action=fs (/vendor/etc/init/hw/init.target.rc:41) returned 5 took 935ms.
+[   11.498675] EXT4-fs (mmcblk0p1): warning: maximal mount count reached, running e2fsck is recommended
+[   11.499813] EXT4-fs (mmcblk0p1): recovery complete
+[   11.507767] EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: barrier=1
+[   11.511678] init: Command 'mount ext4 /dev/block/bootdevice/by-name/persist /persist noatime nosuid nodev barrier=1' action=fs (/vendor/etc/init/hw.
+[   11.521938] selinux: SELinux: Skipping restorecon_recursive(/persist)
+[   11.521938] 
+[   16.541781] init: Command 'wait /dev/block/bootdevice/by-name/oem' action=fs (/vendor/etc/init/hw/init.target.rc:57) returned -1 took 5004ms.
+[   16.542558] audit: type=1400 audit(33.799:6): avc:  denied  { mounton } for  pid=1 comm="init" path="/oem" dev="mmcblk0p31" ino=36 scontext=u:r:ini1
+[   16.553903] init: processing action (fs) from (/system/etc/init/logd.rc:18)
+[   16.572417] init: processing action (fs) from (/system/etc/init/wifi-events.rc:17)
+[   16.578528] init: processing action (fs) from (/vendor/etc/init/init.ftrace_enablement.rc:1)
+[   16.586211] init: processing action (post-fs) from (/init.rc:309)
+[   16.645968] init: property_set("ro.cutoff_voltage_mv", "3400") failed: property already set
+[   16.646446] init: Couldn't load property file: Unable to open '/odm/build.prop': No such file or directory: No such file or directory
+[   16.654032] init: property_set("ro.product.board", "mos") failed: property already set
+[   16.666586] init: Couldn't load property file: Unable to open '/factory/factory.prop': No such file or directory: No such file or directory
+[   16.675146] init: /recovery not specified in fstab
+[   16.685603] init: Command 'load_system_props' action=post-fs (/init.rc:315) returned 0 took 90ms.
+[   16.692075] init: starting service 'logd'...
+[   16.701560] init: Created socket '/dev/socket/logd', mode 666, user 1036, group 1036
+[   16.701795] init: starting service 'servicemanager'...
+[   16.703772] init: starting service 'hwservicemanager'...
+[   16.705756] init: starting service 'vndservicemanager'...
+[   16.707651] EXT4-fs (mmcblk0p31): re-mounted. Opts: (null)
+[   16.728041] init: Created socket '/dev/socket/logdr', mode 666, user 1036, group 1036
+[   16.733518] init: Created socket '/dev/socket/logdw', mode 222, user 1036, group 1036
+[   16.740710] init: Opened file '/proc/kmsg', flags 0
+[   16.748420] init: Opened file '/dev/kmsg', flags 1
+[   16.762482] init: Command 'restorecon --recursive --cross-filesystems /sys/kernel/debug' action=post-fs (/init.rc:332) returned 0 took 54ms.
+[   16.765244] selinux: SELinux: Skipping restorecon_recursive(/cache)
+[   16.765244] 
+[   16.785888] init: processing action (post-fs) from (/vendor/etc/init/hw/init.qcom.rc:61)
+[   16.786057] init: processing action (post-fs) from (/vendor/etc/init/hw/init.target.rc:60)
+[   16.793670] init: starting service 'qseecomd'...
+[   16.802801] logd.auditd: start
+[   16.803331] init: starting service 'exec 2 (/vendor/bin/init.qti.qseecomd.sh)'...
+[   16.804664] init: SVC_EXEC pid 410 (uid 1000 gid 1000+0 context default) started; waiting...
+[   16.816518] logd.klogd: 16816464212
+[   16.865068] binder: 402:402 ioctl 620a bbf30a0c returned -22
+[   16.910417] capability: warning: `qseecomd' uses 32-bit capabilities (legacy support in use)
+[   16.913772] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.919434] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.927886] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.939132] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.943682] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.955248] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.961761] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   16.971173] scm_call failed: func id 0x32000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   17.133350] init: Service 'exec 2 (/vendor/bin/init.qti.qseecomd.sh)' (pid 410) exited with status 0 waiting took 0.330000 seconds
+[   17.134199] type=1400 audit(34.389:7): avc: denied { add_name } for pid=1 comm="init" name="export" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:1
+[   17.134760] init: processing action (post-fs) from (/system/etc/init/atrace.rc:3)
+[   17.139602] init: Unable to open '/sys/kernel/tracing/tracing_on': No such file or directory
+[   17.139770] init: processing action (post-fs) from (/system/etc/init/atrace_userdebug.rc:6)
+[   17.141538] init: processing action (post-fs) from (/system/etc/init/recovery-refresh.rc:1)
+[   17.142004] init: starting service 'exec 3 (/system/bin/recovery-refresh)'...
+[   17.143203] init: SVC_EXEC pid 426 (uid 1000 gid 1007+0 context default) started; waiting...
+[   17.161574] init: Service 'exec 3 (/system/bin/recovery-refresh)' (pid 426) killed by signal 126 waiting took 0.019000 seconds
+[   17.161768] init: processing action (post-fs) from (/vendor/etc/init/commandrouter.rc:1)
+[   17.162049] init: processing action (post-fs) from (/vendor/etc/init/init.rt600.rc:1)
+[   17.162120] init: cannot find '/vendor/bin/mcu_flash123.sh', disabling 'flash_mcu': No such file or directory
+[   17.162143] init: processing action (post-fs) from (/vendor/etc/init/vendor.facebook.hardware.aod_proxy@1.0-service.rc:1)
+[   17.162360] init: processing action (post-fs) from (/vendor/etc/init/vendor.facebook.hardware.mfi@1.0-service.rc:1)
+[   17.162519] init: processing action (late-fs) from (/init.rc:369)
+[   17.163670] STP init: init done!
+[   17.163853] init: starting service 'boot-hal-1-0'...
+[   17.165559] init: starting service 'gatekeeper-1-0'...
+[   17.167616] init: starting service 'keymaster-3-0'...
+[   17.169169] init: processing action (post-fs-data) from (/init.rc:377)
+[   17.170807] init: starting service 'vold'...
+[   17.175044] init: starting service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)'...
+[   17.175732] init: Created socket '/dev/socket/vold', mode 660, user 0, group 1009
+[   17.176289] init: Created socket '/dev/socket/cryptd', mode 660, user 0, group 1009
+[   17.176507] init: SVC_EXEC pid 431 (uid 0 gid 0+0 context default) started; waiting...
+[   17.325399] type=1400 audit(34.389:7): avc: denied { add_name } for pid=1 comm="init" name="export" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:1
+[   17.333158] type=1400 audit(34.389:8): avc: denied { create } for pid=1 comm="init" name="export" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s01
+[   17.353919] selinux: SELinux: Loaded file_contexts
+[   17.353919] 
+[   17.398711] init: Service 'exec 4 (/system/bin/vdc --wait cryptfs enablefilecrypto)' (pid 431) exited with status 0 waiting took 0.224000 seconds
+[   17.399879] init: Setting policy on /data/bootchart
+[   17.414492] fscrypt: AES-256-CTS-CBC using implementation "cts(cbc-aes-ce)"
+[   17.416161] init: Policy for /data/bootchart set to bd5da55ba45579ee
+[   17.429138] init: Setting policy on /data/misc
+[   17.429584] init: Found policy bd5da55ba45579ee at /data/misc which matches expected value
+[   17.473058] init: Setting policy on /data/local
+[   17.474220] init: Found policy bd5da55ba45579ee at /data/local which matches expected value
+[   17.492076] init: Setting policy on /data/vendor
+[   17.493288] init: Found policy bd5da55ba45579ee at /data/vendor which matches expected value
+[   17.498410] init: Not setting policy on /data/data
+[   17.505065] init: Setting policy on /data/app-private
+[   17.509906] init: Policy for /data/app-private set to bd5da55ba45579ee
+[   17.514750] init: Setting policy on /data/app-ephemeral
+[   17.521897] init: Policy for /data/app-ephemeral set to bd5da55ba45579ee
+[   17.526454] init: Setting policy on /data/app-asec
+[   17.533584] init: Policy for /data/app-asec set to bd5da55ba45579ee
+[   17.537725] init: Setting policy on /data/app-lib
+[   17.544384] init: Policy for /data/app-lib set to bd5da55ba45579ee
+[   17.548840] init: Setting policy on /data/app
+[   17.555377] init: Found policy bd5da55ba45579ee at /data/app which matches expected value
+[   17.559368] init: Setting policy on /data/property
+[   17.568070] init: Found policy bd5da55ba45579ee at /data/property which matches expected value
+[   17.572270] init: Setting policy on /data/tombstones
+[   17.581151] init: Policy for /data/tombstones set to bd5da55ba45579ee
+[   17.585864] init: Setting policy on /data/dalvik-cache
+[   17.592598] init: Found policy bd5da55ba45579ee at /data/dalvik-cache which matches expected value
+[   17.597269] init: Setting policy on /data/ota
+[   17.606565] init: Policy for /data/ota set to bd5da55ba45579ee
+[   17.610711] init: Setting policy on /data/ota_package
+[   17.616723] init: Policy for /data/ota_package set to bd5da55ba45579ee
+[   17.621502] init: Setting policy on /data/resource-cache
+[   17.628263] init: Found policy bd5da55ba45579ee at /data/resource-cache which matches expected value
+[   17.633442] init: Not setting policy on /data/lost+found
+[   17.642541] init: Setting policy on /data/drm
+[   17.648101] init: Policy for /data/drm set to bd5da55ba45579ee
+[   17.652214] init: Setting policy on /data/mediadrm
+[   17.658060] init: Policy for /data/mediadrm set to bd5da55ba45579ee
+[   17.662663] init: Setting policy on /data/anr
+[   17.669061] init: Policy for /data/anr set to bd5da55ba45579ee
+[   17.673305] init: Setting policy on /data/backup
+[   17.679377] init: Found policy bd5da55ba45579ee at /data/backup which matches expected value
+[   17.683743] init: Setting policy on /data/ss
+[   17.692510] init: Policy for /data/ss set to bd5da55ba45579ee
+[   17.696231] init: Setting policy on /data/system
+[   17.701952] init: Found policy bd5da55ba45579ee at /data/system which matches expected value
+[   17.708677] init: Not setting policy on /data/system_de
+[   17.715149] init: Not setting policy on /data/system_ce
+[   17.719902] init: Not setting policy on /data/misc_de
+[   17.725225] init: Not setting policy on /data/misc_ce
+[   17.730436] init: Not setting policy on /data/user
+[   17.735349] init: Not setting policy on /data/user_de
+[   17.740917] init: Not setting policy on /data/media
+[   17.745759] init: Setting policy on /data/media/obb
+[   17.750419] init: Policy for /data/media/obb set to bd5da55ba45579ee
+[   17.754716] init: Setting policy on /data/cache
+[   17.761041] init: Found policy bd5da55ba45579ee at /data/cache which matches expected value
+[   17.769223] init: starting service 'exec 5 (/system/bin/vdc --wait cryptfs init_user0)'...
+[   17.774705] init: SVC_EXEC pid 448 (uid 0 gid 0+0 context default) started; waiting...
+[   17.816681] init: Service 'exec 5 (/system/bin/vdc --wait cryptfs init_user0)' (pid 448) exited with status 0 waiting took 0.047000 seconds
+[   17.817488] selinux: SELinux: Skipping restorecon_recursive(/data)
+[   17.817488] 
+[   17.828820] init: starting service 'exec 6 (/system/bin/tzdatacheck /system/usr/share/zoneinfo /data/misc/zoneinfo)'...
+[   17.836908] init: SVC_EXEC pid 449 (uid 1000 gid 1000+0 context default) started; waiting...
+[   17.865838] init: Service 'exec 6 (/system/bin/tzdatacheck /system/usr/share/zoneinfo /data/misc/zoneinfo)' (pid 449) exited with status 0 waiting s
+[   17.866170] init: processing action (post-fs-data) from (/init.usb.rc:6)
+[   17.882426] init: Setting policy on /data/adb
+[   17.887674] init: Policy for /data/adb set to bd5da55ba45579ee
+[   17.891090] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.qcom.rc:245)
+[   17.908517] init: Not setting policy on /data/media
+[   17.921500] init: Setting policy on /data/connectivity
+[   17.922525] init: Policy for /data/connectivity set to bd5da55ba45579ee
+[   17.926389] init: Setting policy on /data/dpm
+[   17.933257] init: Found policy bd5da55ba45579ee at /data/dpm which matches expected value
+[   17.942978] init: Setting policy on /data/system
+[   17.945334] init: Found policy bd5da55ba45579ee at /data/system which matches expected value
+[   17.953129] init: Setting policy on /data/shared
+[   17.958885] init: Policy for /data/shared set to bd5da55ba45579ee
+[   17.963206] init: Setting policy on /data/fota
+[   17.969410] init: Policy for /data/fota set to bd5da55ba45579ee
+[   17.973536] init: Setting policy on /data/hostapd
+[   17.979545] init: Policy for /data/hostapd set to bd5da55ba45579ee
+[   17.990348] init: Setting policy on /data/nfc
+[   17.991333] init: Found policy bd5da55ba45579ee at /data/nfc which matches expected value
+[   18.008603] init: Unable to open '/sys/block/dm-0/queue/read_ahead_kb': No such file or directory
+[   18.008686] init: Unable to open '/sys/block/dm-1/queue/read_ahead_kb': No such file or directory
+[   18.018020] init: Setting policy on /data/FTM_AP
+[   18.026357] init: Policy for /data/FTM_AP set to bd5da55ba45579ee
+[   18.030115] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.target.rc:68)
+[   18.036643] init: Setting policy on /data/tombstones
+[   18.044656] init: Policy for /data/tombstones set to bd5da55ba45579ee
+[   18.053691] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.qcom.factory.rc:62)
+[   18.056153] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.qcom.test.rc:29)
+[   18.066116] init: processing action (post-fs-data) from (/system/etc/init/bootstat.rc:3)
+[   18.077326] init: processing action (post-fs-data) from (/system/etc/init/logtagd.rc:4)
+[   18.085060] init: processing action (post-fs-data) from (/system/etc/init/recovery-persist.rc:1)
+[   18.091119] init: starting service 'exec 7 (/system/bin/recovery-persist)'...
+[   18.100438] init: SVC_EXEC pid 450 (uid 1000 gid 1007+0 context default) started; waiting...
+[   18.123826] init: Service 'exec 7 (/system/bin/recovery-persist)' (pid 450) exited with status 0 waiting took 0.033000 seconds
+[   18.124074] init: processing action (post-fs-data) from (/vendor/etc/init/devicecertserver.rc:1)
+[   18.134820] init: processing action (post-fs-data) from (/vendor/etc/init/hostapd.android.rc:9)
+[   18.144596] init: processing action (ro.crypto.state=encrypted && ro.crypto.type=file && zygote-start) from (/init.rc:553)
+[   18.152048] init: starting service 'update_verifier_nonencrypted'...
+[   18.163917] init: SVC_EXEC pid 451 (uid 0 gid 2001+1 context default) started; waiting...
+[   18.207749] init: Service 'update_verifier_nonencrypted' (pid 451) exited with status 0 waiting took 0.056000 seconds
+[   18.208740] init: starting service 'netd'...
+[   18.219272] init: starting service 'zygote'...
+[   18.219295] init: Created socket '/dev/socket/netd', mode 660, user 0, group 1000
+[   18.219771] init: Created socket '/dev/socket/dnsproxyd', mode 660, user 0, group 3003
+[   18.220193] init: Created socket '/dev/socket/mdns', mode 660, user 0, group 1000
+[   18.220550] init: Created socket '/dev/socket/fwmarkd', mode 660, user 0, group 3003
+[   18.250540] init: do_start: Service zygote_secondary not found
+[   18.251007] init: Created socket '/dev/socket/zygote', mode 660, user 0, group 1000
+[   18.262518] init: processing action (load_persist_props_action) from (/init.rc:264)
+[   18.269959] init: Couldn't load property file: Unable to open '/data/local.prop': No such file or directory: No such file or directory
+[   18.566783] init: Command 'load_persist_props' action=load_persist_props_action (/init.rc:265) returned 0 took 296ms.
+[   18.567398] init: starting service 'logd-reinit'...
+[   18.578288] init: processing action (load_persist_props_action) from (/vendor/etc/init/hw/init.qcom.usb.rc:96)
+[   18.581234] init: processing action (load_persist_props_action) from (/system/etc/init/logcatd.rc:31)
+[   18.591370] init: processing action (firmware_mounts_complete) from (/init.rc:270)
+[   18.598138] logd.daemon: reinit
+[   18.608185] init: Service 'logd-reinit' (pid 470) exited with status 0
+[   18.611390] init: processing action (early-boot) from (/vendor/etc/init/hw/init.qcom.rc:64)
+[   18.617968] type=1400 audit(34.389:8): avc: denied { create } for pid=1 comm="init" name="export" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s01
+[   18.619673] ueventd: firmware: loading 'adsp.mdt' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.mdt'
+[   18.620398] init: Unable to open '/sys/kernel/boot_cdsp/boot': No such file or directory
+[   18.620639] can't get fw name.
+[   18.620647] sensors-ssc soc:qcom,msm-ssc-sensors: slpi_load_fw: SLPI image loading failed
+[   18.620971] init: starting service 'exec 8 (/vendor/bin/init.qcom.early_boot.sh)'...
+[   18.622271] init: SVC_EXEC pid 472 (uid 0 gid 0+0 context u:r:qti_init_shell:s0) started; waiting...
+[   18.623199] subsys-pil-tz c200000.qcom,lpass: adsp: loading from 0x8b800000 to 0x8cd00000
+[   18.623818] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.mdt took 4ms
+[   18.636087] ueventd: firmware: loading 'adsp.b02' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b02'
+[   18.638308] ueventd: firmware: loading 'adsp.b03' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b03'
+[   18.640795] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b02 took 5ms
+[   18.648184] ueventd: firmware: loading 'adsp.b06' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b06'
+[   18.649323] ueventd: firmware: loading 'adsp.b08' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b08'
+[   18.650406] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b03 took 13ms
+[   18.651243] ueventd: firmware: loading 'adsp.b04' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b04'
+[   18.653036] ueventd: firmware: loading 'adsp.b07' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b07'
+[   18.654383] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b06 took 6ms
+[   18.654948] ueventd: firmware: loading 'adsp.b09' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b09'
+[   18.655798] ueventd: firmware: loading 'adsp.b10' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b10'
+[   18.657692] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b08 took 8ms
+[   18.658022] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b09 took 3ms
+[   18.658493] ueventd: firmware: loading 'adsp.b05' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b05'
+[   18.663943] ueventd: firmware: loading 'adsp.b11' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b11'
+[   18.664426] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b07 took 11ms
+[   18.666082] ueventd: firmware: loading 'adsp.b12' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b12'
+[   18.667242] ueventd: firmware: loading 'adsp.b13' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b13'
+[   18.669216] ueventd: firmware: loading 'adsp.b14' for '/devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b14'
+[   18.674945] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b11 took 11ms
+[   18.676148] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b13 took 9ms
+[   18.678505] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b05 took 20ms
+[   18.683254] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b12 took 17ms
+[   18.684312] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b10 took 29ms
+[   18.686417] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b14 took 17ms
+[   18.758448] ueventd: loading /devices/platform/soc/c200000.qcom,lpass/firmware/adsp.b04 took 107ms
+[   18.944863] type=1400 audit(35.879:9): avc: denied { create } for pid=1 comm="init" name="boot" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 t1
+[   18.969812] subsys-pil-tz c200000.qcom,lpass: adsp: Brought out of reset
+[   18.996872] subsys-pil-tz c200000.qcom,lpass: Subsystem error monitoring/handling services are up
+[   18.996874] subsys-pil-tz c200000.qcom,lpass: adsp: Power/Clock ready interrupt received
+[   19.009914] diag: In diag_send_feature_mask_update, control channel is not open, p: 1, 00000000
+[   19.013538] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 1
+[   19.017933] apr_tal:Q6 Is Up
+[   19.025380] msm8952-asoc-wcd c051000.sound: msm8952_asoc_machine_probe:of read string qcom,msm-ext-pa i 0 ret 0
+[   19.025388] msm8952-asoc-wcd c051000.sound: msm8952_asoc_machine_probe: missing qcom,msm-spk-ext-pa in dt node
+[   19.025403] msm8952-asoc-wcd c051000.sound: is_ext_spk_gpio_support: missing qcom,msm-spk-ext-pa in dt node
+[   19.025415] msm8952-asoc-wcd c051000.sound: Headset is using internal micbias
+[   19.037222] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: no dapm match for AFE_LOOPBACK_TX --> AFE_LOOPBACK_TX --> MultiMedia8 Mixer
+[   19.037227] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route AFE_LOOPBACK_TX -> AFE_LOOPBACK_TX -> MultiMedia8 Mixer
+[   19.041142] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: no dapm match for PRI_TDM_TX_3 --> PRI_TDM_TX_3 --> AUDIO_REF_EC_UL1 MUX
+[   19.041146] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route PRI_TDM_TX_3 -> PRI_TDM_TX_3 -> AUDIO_REF_EC_UL1 MUX
+[   19.041418] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: no dapm match for PRI_TDM_TX_3 --> PRI_TDM_TX_3 --> AUDIO_REF_EC_UL8 MUX
+[   19.041421] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: Failed to add route PRI_TDM_TX_3 -> PRI_TDM_TX_3 -> AUDIO_REF_EC_UL8 MUX
+[   19.104330] msm8952-asoc-wcd c051000.sound: control 2:0:0:MultiMedia5 Mixer QUAT_MI2S_TX:0 is already present
+[   19.104338] msm-pcm-routing soc:qcom,msm-pcm-routing: ASoC: failed to add widget MultiMedia5 Mixer dapm kcontrol MultiMedia5 Mixer QUAT_MI2S_TX: -16
+[   19.128910] sysmon-qmi: sysmon_clnt_svc_arrive: Connection established between QMI handle and adsp's SSCTL service
+[   19.164486] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 1
+[   19.168289] init: property_set("ro.sf.lcd_density", "160") failed: property already set
+[   20.001523] init: Service 'exec 8 (/vendor/bin/init.qcom.early_boot.sh)' (pid 472) exited with status 0 waiting took 1.380000 seconds
+[   20.003429] init: processing action (early-boot) from (/system/etc/init/installd.rc:5)
+[   20.033543] init: processing action (boot) from (/init.rc:560)
+[   20.035158] init: Unable to open '/proc/sys/vm/min_free_order_shift': No such file or directory
+[   20.043085] init: starting service 'hidl_memory'...
+[   20.048894] init: starting service 'bluetooth-1-0'...
+[   20.053957] init: starting service 'camera-provider-2-4'...
+[   20.058383] init: couldn't write 560 to /dev/cpuset/camera-daemon/tasks: No such file or directory
+[   20.059047] init: starting service 'cas-hal-1-0'...
+[   20.061198] init: starting service 'configstore-hal-1-0'...
+[   20.063621] init: starting service 'gralloc-2-0'...
+[   20.065699] init: starting service 'hwcomposer-2-1'...
+[   20.067711] init: starting service 'health-hal-1-0'...
+[   20.069837] init: starting service 'light-hal-2-0'...
+[   20.075762] init: starting service 'power-hal-1-0'...
+[   20.077823] init: starting service 'thermal-hal-1-0'...
+[   20.082519] init: starting service 'usb-hal-1-0'...
+[   20.084688] init: starting service 'wifi_hal_legacy'...
+[   20.087186] init: starting service 'hal-server'...
+[   20.089681] init: starting service 'qti_esepowermanager_service'...
+[   20.095401] init: starting service 'qti_gnss_service'...
+[   20.097526] init: starting service 'factory-hal-1-0'...
+[   20.099835] init: starting service 'limits-hal-1-0'...
+[   20.102921] init: starting service 'perf-hal-1-0'...
+[   20.105052] init: starting service 'qteeconnector-hal-1-0'...
+[   20.107060] init: starting service 'sensorscal-hal-1-0'...
+[   20.109218] init: starting service 'tui_comm-1-0'...
+[   20.116347] init: starting service 'vendor.qti.vibrator-1-2'...
+[   20.118003] init: Command 'class_start hal' action=boot (/init.rc:651) returned 0 took 75ms.
+[   20.118674] init: starting service 'healthd'...
+[   20.120806] init: starting service 'qcom-c_core-sh'...
+[   20.122847] init: starting service 'irsc_util'...
+[   20.125066] init: starting service 'rmt_storage'...
+[   20.127075] init: starting service 'tftp_server'...
+[   20.131639] init: starting service 'sensor-sh'...
+[   20.133493] init: cannot find '/system/vendor/bin/esepmdaemon', disabling 'esepmdaemon': No such file or directory
+[   20.133981] init: starting service 'qcom-usb-sh'...
+[   20.135411] init: starting service 'wcn-mac'...
+[   20.136799] init: starting service 'bt-mac'...
+[   20.138805] init: starting service 'hwinfo'...
+[   20.139962] type=1400 audit(35.879:9): avc: denied { create } for pid=1 comm="init" name="boot" scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 t1
+[   20.139974] type=1400 audit(37.389:10): avc: denied { entrypoint } for pid=589 comm="init" path="/system/bin/macgen" dev="mmcblk0p31" ino=513 scont1
+[   20.141023] init: starting service 'per_mgr'...
+[   20.142576] init: starting service 'cs-early-boot'...
+[   20.144515] init: starting service 'lmkd'...
+[   20.146512] type=1400 audit(37.389:10): avc: denied { entrypoint } for pid=589 comm="init" path="/system/bin/macgen" dev="mmcblk0p31" ino=513 scont1
+[   20.146523] type=1400 audit(37.399:11): avc: denied { entrypoint } for pid=590 comm="init" path="/system/bin/hwinfo" dev="mmcblk0p31" ino=449 scont1
+[   20.146654] init: starting service 'surfaceflinger'...
+[   20.148638] init: Created socket '/dev/socket/lmkd', mode 660, user 1000, group 1000
+[   20.148639] init: starting service 'thermalservice'...
+[   20.153363] init: Failed to bind socket 'pdx/system/vr/display/client': No such file or directory
+[   20.153890] init: Failed to bind socket 'pdx/system/vr/display/manager': No such file or directory
+[   20.154342] init: Failed to bind socket 'pdx/system/vr/display/vsync': No such file or directory
+[   20.160888] init: starting service 'config-swap'...
+[   20.162480] init: processing action (boot) from (/init.usb.rc:29)
+[   20.162631] init: processing action (persist.sys.usb.config=* && boot) from (/init.usb.rc:110)
+[   20.162684] init: processing action (boot) from (/vendor/etc/init/hw/init.qcom.rc:85)
+[   20.353050] rmt_storage:INFO:check_support_using_libmdm: Modem subsystem found on target!
+[   20.357632] rmt_storage:INFO:main: Done with init now waiting for messages!
+[   20.469208] init: Command 'setprop persist.camera.gyro.disable 0' action=boot (/vendor/etc/init/hw/init.qcom.rc:148) returned 0 took 301ms.
+[   20.470611] init: sanitize_path: Failed to locate path /dev/block/bootdevice/by-name/rawdump: No such file or directory
+[   20.560157] init: 
+[   20.560219] init: do_chown: sanitize_path failed for path /dev/block/bootdevice/by-name/rawdumpprefix: /dev/block/
+[   20.561097] init: 
+[   20.694306] selinux: avc:  denied  { set } for property=persist.build.version.hw pid=590 uid=0 gid=0 scontext=u:r:hwinfo:s0 tcontext=u:object_r:def1
+[   20.694306] 
+[   20.708665] init: sanitize_path: Failed to locate path /dev/block/bootdevice/by-name/rawdump: No such file or directory
+[   20.745621] init: 
+[   20.745688] init: do_chmod: failed for /dev/block/bootdevice/by-name/rawdump..prefix(/dev/block/) match err 
+[   20.746873] init: 
+[   20.921670] healthd: Unknown power supply type 'BMS'
+[   20.921903] healthd: Unknown power supply type 'Main'
+[   20.931667] init: sanitize_path: Failed to locate path /dev/block/bootdevice/by-name/ramdump: No such file or directory
+[   20.931676] init: 
+[   20.931691] init: do_chown: sanitize_path failed for path /dev/block/bootdevice/by-name/ramdumpprefix: /dev/block/
+[   20.931697] init: 
+[   20.933766] init: sanitize_path: Failed to locate path /dev/block/bootdevice/by-name/ramdump: No such file or directory
+[   20.933774] init: 
+[   20.933795] init: do_chmod: failed for /dev/block/bootdevice/by-name/ramdump..prefix(/dev/block/) match err 
+[   20.933801] init: 
+[   20.942254] init: insmod: open("/vendor/lib/modules/msm_11ad_proxy.ko") failed: No such file or directory
+[   20.942908] init: Unable to open '/sys/class/android_usb/android0/iSerial': No such file or directory
+[   20.994078] CHRDEV "msm_usb_bridge" major number 221 goes below the dynamic allocation range
+[   21.059422] mdss_mdp_pp_get_version: unsupported feature 11
+[   21.141928] CHRDEV "usb_rndis" major number 220 goes below the dynamic allocation range
+[   21.189081] i2c-msm-v2 78b6000.i2c: NACK: slave not responding, ensure its powered: msgs(n:2 cur:0 tx) bc(rx:2 tx:1) mode:FIFO slv_addr:0x55 MSTR_S0
+[   21.192014] healthd: battery none chg=
+[   21.207489] init: Unable to open '/sys/class/android_usb/android0/f_ffs/aliases': No such file or directory
+[   21.207621] init: insmod: open("/system/lib/modules/adsprpc.ko") failed: No such file or directory
+[   21.233194] init: Unable to open '/sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/fw_name': No such file or directory
+[   21.233301] init: Unable to open '/sys/devices/soc.0/78b8000.i2c/i2c-4/4-0020/input/input0/update_fw': No such file or directory
+[   21.276448] init: cannot find '/vendor/bin/sensors.qcom', disabling 'sensors': No such file or directory
+[   21.291028] init: setpgid failed for console: Operation not permitted
+[   21.349195] init: cannot find '/vendor/bin/ATFWD-daemon', disabling 'atfwd': No such file or directory
+[   21.363529] init: cannot find '/system/bin/install-recovery.sh', disabling 'flash_recovery': No such file or directory
+[   21.371765] init: cannot find '/system/vendor/bin/cnd', disabling 'cnd': No such file or directory
+[   21.373265] init: cannot find '/system/vendor/bin/dpmQmiMgr', disabling 'dpmQmiMgr': No such file or directory
+[   21.436639] msm_qti_pp_get_rms_value_control, back not active to query rms be_idx:3
+[   21.440114] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   21.440304] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   21.440418] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.440422] msm_audio_sound_focus_get: Could not get copp idx for port_id=16385
+[   21.440499] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.440502] msm_audio_source_tracking_get: Could not get copp idx for port_id=16385
+mos:/ $ [   21.440636] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   21.440744] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   21.440841] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.440844] msm_audio_sound_focus_get: Could not get copp idx for port_id=4101
+[   21.440951] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.440955] msm_audio_source_tracking_get: Could not get copp idx for port_id=4101
+[   21.441056] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   21.441157] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   21.441256] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.441259] msm_audio_sound_focus_get: Could not get copp idx for port_id=4149
+[   21.441344] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.441346] msm_audio_source_tracking_get: Could not get copp idx for port_id=4149
+[   21.441426] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.441430] msm_audio_sound_focus_get: Could not get copp idx for port_id=36865
+[   21.441579] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   21.441582] msm_audio_source_tracking_get: Could not get copp idx for port_id=36865
+[   21.453091] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.453744] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.454142] msm_pcm_volume_ctl_get substream not found
+[   21.454274] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.454640] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.455763] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.456395] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.456471] msm_pcm_volume_ctl_get substream or runtime not found
+[   21.457412] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.458413] msm_pcm_volume_ctl_get substream not found
+[   21.458561] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.458892] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.459796] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.491419] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.492444] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.493458] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.494368] msm_pcm_volume_ctl_get substream not found
+[   21.494860] msm_pcm_volume_ctl_get substream or runtime not found
+[   21.495534] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.496704] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.497756] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   21.551800] ipa_get_ipc_logbuf_low:3233 IPA HW is not supported
+[   21.575055] ipa_get_ipc_logbuf_low:3233 IPA HW is not supported
+[   21.621530] ueventd: firmware: could not find firmware for msadp
+[   21.621826] pil-q6v5-mss 4080000.qcom,mss: Debug policy not present - msadp. Continue.
+[   22.065424] init: cannot find '/vendor/bin/vm_bms', disabling 'vm_bms': No such file or directory
+[   22.088425] init: cannot find '/vendor/bin/vppservice', disabling 'vppservice': No such file or directory
+[   22.088601] init: cannot find '/system/bin/qrngd', disabling 'qrngd': No such file or directory
+[   22.560457] STD-PD: Registered std-pd
+[   22.560565] THERM-BALANCE: Parallel PSY entry not found.
+[   22.571179] PPS: Registered pps
+[   22.571302] CTM: Parallel PSY entry not found.
+[   22.607199] msm_get_platform_subtype: Invalid hardware platform sub type for qrd found
+[   22.647374] HVDCP2: Registered HVDCP2
+[   22.647676] QG-D: QG disabled - Debug-board detected
+[   22.710777] SOH-D: SOH disabled - Debug-board detected
+[   22.739123] init: cannot find '/system/vendor/bin/nqnfcinfo', disabling 'nqnfcinfo': No such file or directory
+[   22.741693] init: cannot find '/system/vendor/bin/cnss-daemon', disabling 'cnss-daemon': No such file or directory
+[   22.748204] init: cannot find '/vendor/bin/ssgqmigd', disabling 'ssgqmigd': No such file or directory
+[   22.929186] init: cannot find '/vendor/bin/qvop-daemon', disabling 'qvop-daemon': No such file or directory
+[   22.929328] init: cannot find '/system/vendor/bin/qseeproxydaemon', disabling 'qseeproxydaemon': No such file or directory
+[   23.090350] init: cannot find '/system/vendor/bin/qdmastatsd', disabling 'qdmastatsd': No such file or directory
+[   23.090450] init: cannot find '/vendor/bin/chre', disabling 'chre': No such file or directory
+[   23.099695] init: cannot find '/system/vendor/bin/mm-qcamera-daemon', disabling 'qcamerasvr': No such file or directory
+[   23.230823] init: cannot find '/system/vendor/bin/qfp-daemon', disabling 'qfp-daemon': No such file or directory
+[   23.230930] init: cannot find '/system/vendor/bin/audiod', disabling 'audiod': No such file or directory
+[   23.290269] init: cannot find '/system/vendor/bin/dts_configurator', disabling 'dts_configurator': No such file or directory
+[   23.290381] init: cannot find '/system/vendor/bin/mdtpd', disabling 'mdtpd': No such file or directory
+[   23.291335] msm_sensor_fill_eeprom_subdevid_by_name:222 Eeprom userspace probe for onsemi_cat24c64_ov5675
+[   23.291783] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   23.291787] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   23.291790] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   23.313710] msm_camera_power_up:1471 cannot set pin to active state
+[   23.332788] ov5675_aw05v04 probe succeeded
+[   23.332789] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   23.332795] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   23.332799] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   23.340314] msm_camera_power_down:1779 cannot set pin to suspend state
+[   23.344356] msm_sensor_fill_eeprom_subdevid_by_name:222 Eeprom userspace probe for onsemi_cat24c64
+[   23.395386] imx563 probe succeeded
+[   23.395705] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[   23.396412] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[   23.408705] ipa_get_ipc_logbuf_low:3233 IPA HW is not supported
+[   23.409694] ipa_get_ipc_logbuf_low:3233 IPA HW is not supported
+[   23.540317] ipc_router_log_msg: Modem QMI Readiness RX cmd:0x2 ADDR:0x0
+[   23.545076] rmt_storage:INFO:rmt_storage_open_cb: Processing: Open Request for /boot/modem_fs1!
+[   23.560752] rmt_storage:INFO:rmt_storage_open_cb: Processing: Open Request for /boot/modem_fs2!
+[   23.562032] rmt_storage:INFO:rmt_storage_open_cb: Processing: Open Request for /boot/modem_fsg!
+[   23.563123] rmt_storage:INFO:rmt_storage_open_cb: Processing: Open Request for /boot/modem_fsc!
+[   23.565139] rmt_storage:INFO:rmt_storage_alloc_buff_cb: Received req_size: 0! avail: 1572864
+[   23.566574] rmt_storage:INFO:rmt_storage_rw_iovec_cb: Read iovec request received for /boot/modem_fs1
+[   23.572001] rmt_storage:INFO:rmt_storage_client_thread: Calling Read [offset=512, size=512]for /boot/modem_fs1!
+[   23.572824] rmt_storage:INFO:rmt_storage_client_thread: Done Read (bytes = 512) for /boot/modem_fs1!
+[   23.573860] rmt_storage:INFO:rmt_storage_rw_iovec_cb: Read iovec request received for /boot/modem_fs2
+[   23.580737] rmt_storage:INFO:rmt_storage_client_thread: Calling Read [offset=512, size=512]for /boot/modem_fs2!
+[   23.581855] rmt_storage:INFO:rmt_storage_client_thread: Done Read (bytes = 512) for /boot/modem_fs2!
+[   23.583958] rmt_storage:INFO:rmt_storage_rw_iovec_cb: Read iovec request received for /boot/modem_fs2
+[   23.590428] rmt_storage:INFO:rmt_storage_client_thread: Calling Read [offset=1024, size=1571840]for /boot/modem_fs2!
+[   23.621619] rmt_storage:INFO:rmt_storage_client_thread: Done Read (bytes = 1571840) for /boot/modem_fs2!
+[   23.702656] scm_call failed: func id 0x2000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   23.702666] memshare: hyp_assign_phys failed size=5242880 err=-5
+[   23.714029] diag: In diag_send_feature_mask_update, control channel is not open, p: 0, 00000000
+[   23.714040] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 0
+[   23.715110] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 0
+[   23.923359] msm_isp_do_tasklet: VFE0 open cnt = 0, irq 80000000/0
+[   23.926903] msm_isp_do_tasklet: VFE0 open cnt = 0, irq 80000000/0
+[   23.984098] init: service audiocapture does not have a SELinux domain defined
+[   23.992605] init: cannot find '/system/xbin/perfprofd', disabling 'perfprofd': No such file or directory
+[   24.100248] init: cannot find '/system/vendor/bin/qmuxd', disabling 'qmuxd': No such file or directory
+[   24.105925] selinux: avc:  denied  { set } for property=wlan.driver.config pid=734 uid=1000 gid=1000 scontext=u:r:wcnss_service:s0 tcontext=u:objec1
+[   24.105925] 
+[   24.126576] init: cannot find '/system/vendor/bin/imsqmidaemon', disabling 'imsqmidaemon': No such file or directory
+[   24.129585] init: do_stop: Service dhcpcd not found
+[   24.139806] init: cannot find '/vendor/bin/ATFWD-daemon', disabling 'atfwd': No such file or directory
+[   24.217753] init: cannot find '/system/vendor/bin/ipacm-diag', disabling 'ipacm-diag': No such file or directory
+[   24.222392] selinux: avc:  denied  { set } for property=commandrouter.enabled pid=919 uid=0 gid=0 scontext=u:r:qti_init_shell:s0 tcontext=u:object_1
+[   24.222392] 
+[   24.342386] msm_qti_pp_get_rms_value_control, back not active to query rms be_idx:3
+[   24.346168] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   24.349211] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   24.356932] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.364655] msm_audio_sound_focus_get: Could not get copp idx for port_id=16385
+[   24.371362] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.372019] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   24.384636] msm_audio_source_tracking_get: Could not get copp idx for port_id=16385
+[   24.389839] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   24.397641] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   24.405183] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.412942] msm_audio_sound_focus_get: Could not get copp idx for port_id=4101
+[   24.419553] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.426294] msm_audio_source_tracking_get: Could not get copp idx for port_id=4101
+[   24.437422] msm_voice_sound_focus_get: Error getting Sound Focus Params, err=-22
+[   24.440488] msm_voice_source_tracking_get: Error getting Source Tracking Params, err=-22
+[   24.447947] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.455880] msm_audio_sound_focus_get: Could not get copp idx for port_id=4149
+[   24.470574] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.470615] msm_audio_source_tracking_get: Could not get copp idx for port_id=4149
+[   24.476335] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.492300] STP Master connected
+[   24.499857] msm_audio_sound_focus_get: Could not get copp idx for port_id=36865
+[   24.504591] msm_audio_get_copp_idx_from_port_id: Invalid FE, exiting
+[   24.509163] msm_audio_source_tracking_get: Could not get copp idx for port_id=36865
+[   24.521128] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.526268] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.533058] msm_pcm_volume_ctl_get substream not found
+[   24.539981] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.546139] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.555695] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.562354] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.568788] msm_pcm_volume_ctl_get substream or runtime not found
+[   24.578004] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.584848] msm_pcm_volume_ctl_get substream not found
+[   24.605077] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.605603] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.626273] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.627366] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.637131] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.643760] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.650808] msm_pcm_volume_ctl_get substream not found
+[   24.657710] msm_pcm_volume_ctl_get substream or runtime not found
+[   24.668072] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.669861] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.677820] msm_adsp_stream_callback_get: ASM Stream PP event queue is not initialized.
+[   24.853344] smd_pkt_open: DATA2 open failed -19
+[   24.910896] diag: In diagfwd_data_read_done, unable to write to mux error: -19
+[   24.989674] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[   25.045122] scm_call failed: func id 0x2000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[   25.045176] memshare: hyp_assign_phys failed size=2097152 err=-5
+[   25.138560] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   25.409466] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[   25.474672] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   25.625076] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[   25.634685] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   25.634727] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   25.640940] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   25.649659] msm_camera_power_up:1471 cannot set pin to active state[   25.667183] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   25.791883] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   25.791926] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   25.798935] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   25.806275] msm_camera_power_down:1779 cannot set pin to suspend state[   25.847754] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[   25.858037] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   25.858077] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   25.868240] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   25.872201] msm_camera_power_up:1471 cannot set pin to active state[   25.904397] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   25.926353] diag: In diag_send_feature_mask_update, control channel is not open, p: 2, 00000000
+[   25.926407] diag: In diag_send_peripheral_buffering_mode, buffering flag not set for 2
+[   26.000731] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   26.000774] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   26.006531] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   26.016181] msm_camera_power_down:1779 cannot set pin to suspend state[   26.071642] diag: In diag_send_peripheral_buffering_mode, buffering flag n2
+[   26.075436] msm_csid_irq CSID0_IRQ_STATUS_ADDR = 0x800
+[   26.092429] wcnss: no space available for smd frame
+[   26.093123] selinux: SELinux: Could not get canonical path for /sys/devices/platform/soc/a000000.qcom,wcnss-wlan/firmware/wlan!prima!WCNSS_qcom_wla.
+[   26.093123] 
+[   26.096679] ueventd: selinux_android_restorecon(/sys/devices/platform/soc/a000000.qcom,wcnss-wlan/firmware/wlan!prima!WCNSS_qcom_wlan_nv.bin) failey
+[   26.108354] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   26.130865] wcnss: no space available for smd frame
+[   26.170192] wcnss: no space available for smd frame
+[   26.200430] wcnss: no space available for smd frame
+[   26.316666] msm_csid_irq CSID1_IRQ_STATUS_ADDR = 0x800
+[   26.325737] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   26.325777] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   26.333642] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   26.339832] msm_camera_power_up:1471 cannot set pin to active state[   26.355398] MSM-CPP cpp_init_hardware:1151 stream_cnt:0
+[   26.424781] qpnp_adc_tm_channel_measure: not a valid ADC_TM channel
+[   26.424822] wcnss: wcnss_setup_vbat_monitoring: tm setup failed: -22
+[   26.465753] pgd = f3c52314
+[   26.465777] [00000000] *pgd=00000000
+[   26.473141] msm8937-pinctrl 1000000.pinctrl: config 9: ffffffff is invalid
+[   26.473180] msm8937-pinctrl 1000000.pinctrl: pin_config_group_set op failed for group 27
+[   26.480821] qcom,camera 1b0c000.qcom,cci:qcom,camera@1: Error applying setting, reverse things back
+[   26.489266] msm_camera_power_down:1779 cannot set pin to suspend state[   27.552455] i2c-msm-v2 78b6000.i2c: NACK: slave not responding, ensure its0
+[   27.555858] healthd: battery none chg=
+[   27.922231] healthd: battery none chg=
+[   28.517011] q6asm_callback: payload size of 8 is less than expected.
+[   28.517598] q6asm_callback: payload size of 8 is less than expected.
+[   28.529976] q6asm_callback: payload size of 8 is less than expected.
+[   28.535203] q6asm_callback: payload size of 8 is less than expected.
+[   31.295032] [13:41:15.585529] [0000000037C8D04B] [wific]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.295171] [13:41:15.585671] [0000000037C8DAFD] [wific]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.307544] [13:41:15.598039] [0000000037CC7A9B] [wific]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.319036] [13:41:15.609533] [0000000037CFD897] [wific]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.602971] [13:41:15.893467] [00000000382307B2] [wpa_s]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.603311] [13:41:15.893808] [0000000038232146] [wpa_s]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.619513] [13:41:15.910010] [000000003827E060] [wpa_s]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.627005] [13:41:15.917502] [00000000382A1245] [wpa_s]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.645931] [13:41:15.936427] [00000000382F9DB2] [wpa_s]  wlan: [E :HDD] wlan_hdd_get_classAstats: Unable to retrieve Class A statistics
+[   31.814654] [13:41:16.105150] [0000000038610BEC] [wpa_s]  wlan: [E :HDD] __wlan_hdd_cfg80211_wifi_configuration_set: 7832: Not in Connected state!
+[   32.233822] audit: audit_lost=1 audit_rate_limit=20 audit_backlog_limit=64
+[   32.233862] audit: rate limit exceeded
+[   32.317258] init: Unable to open '/sys/block/dm-0/queue/read_ahead_kb': No such file or directory
+[   32.317374] init: Unable to open '/sys/block/dm-1/queue/read_ahead_kb': No such file or directory
+[   32.329195] init: cannot find '/system/bin/qrngp', disabling 'qrngp': No such file or directory
+[   32.392041] selinux: avc:  denied  { set } for property=ro.ovr.perf.boottime pid=1846 uid=1000 gid=1007 scontext=u:r:bootstat:s0 tcontext=u:object_1
+[   32.392041] 
+

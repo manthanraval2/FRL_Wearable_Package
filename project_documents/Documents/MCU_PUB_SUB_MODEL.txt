@@ -1,0 +1,3 @@
+SR.NO		*****SENSOR TYPE******					****PUBLISH TOPIC to SOC****			****SUBSCRIBE TOPIC to SOC*****    	****API****
+
+1			
