@@ -1,0 +1,12 @@
+===================================
+=== FRL Package 12 August 2021   ==
+===================================
+
+demo_package
+  - It consist's demo projects.
+  
+project_documents 
+  - This folder has all the project related documents
+ 
+stress_test
+  - This has stress test package.
