@@ -1,0 +1,41 @@
+List sensors: Name: OPT3001 Ambient light sensor /Type_String: android.sensor.light /Type_number: 5
+List sensors: Name: Heart rate sensor /Type_String: android.sensor.heart_rate /Type_number: 21
+List sensors: Name: LPS27HHW Pressure sensor /Type_String: android.sensor.pressure /Type_number: 6
+List sensors: Name: LSM6DSRXR Gyroscope sensor /Type_String: android.sensor.gyroscope /Type_number: 4
+List sensors: Name: LSM6DSRXTR Accelerometer sensor /Type_String: android.sensor.accelerometer /Type_number: 1
+List sensors: Name: MAX86170A PPG sensor /Type_String:  /Type_number: 65541
+List sensors: Name: Pedometer Sensor /Type_String: android.sensor.step_counter /Type_number: 19
+List sensors: Name: Significant Motion Sensor /Type_String: android.sensor.significant_motion /Type_number: 17
+List sensors: Name: Calories Sensor /Type_String:  /Type_number: 65540
+List sensors: Name: On Wrist Detection Sensor /Type_String:  /Type_number: 65544
+List sensors: Name: Wrist Tilt Sensor /Type_String: android.sensor.wrist_tilt_gesture /Type_number: 26
+List sensors: Name: Pedestrian Dead Reckoning Sensor /Type_String:  /Type_number: 65546
+List sensors: Name: Heart Rate Variability Sensor /Type_String:  /Type_number: 65547
+List sensors: Name: Activity Detection Sensor /Type_String:  /Type_number: 65548
+List sensors: Name: Beat to Beat Interval (RRI) Sensor /Type_String:  /Type_number: 65539
+List sensors: Name: Sensor Temperature Sensor /Type_String:  /Type_number: 65543
+List sensors: Name: Ott Debug Sensor /Type_String:  /Type_number: 65545
+List sensors: Name: Game Rotation Vector Sensor /Type_String: android.sensor.game_rotation_vector /Type_number: 15
+List sensors: Name: Gravity Sensor /Type_String: android.sensor.gravity /Type_number: 9
+List sensors: Name: Linear Acceleration Sensor /Type_String: android.sensor.linear_acceleration /Type_number: 10
+List sensors: Name: OPT3001 Ambient light sensor /Type_String: android.sensor.light /Type_number: 5
+List sensors: Name: Heart rate sensor /Type_String: android.sensor.heart_rate /Type_number: 21
+List sensors: Name: LPS27HHW Pressure sensor /Type_String: android.sensor.pressure /Type_number: 6
+List sensors: Name: LSM6DSRXR Gyroscope sensor /Type_String: android.sensor.gyroscope /Type_number: 4
+List sensors: Name: LSM6DSRXTR Accelerometer sensor /Type_String: android.sensor.accelerometer /Type_number: 1
+List sensors: Name: MAX86170A PPG sensor /Type_String:  /Type_number: 65541
+List sensors: Name: Pedometer Sensor /Type_String: android.sensor.step_counter /Type_number: 19
+List sensors: Name: Significant Motion Sensor /Type_String: android.sensor.significant_motion /Type_number: 17
+List sensors: Name: Calories Sensor /Type_String:  /Type_number: 65540
+List sensors: Name: On Wrist Detection Sensor /Type_String:  /Type_number: 65544
+List sensors: Name: Wrist Tilt Sensor /Type_String: android.sensor.wrist_tilt_gesture /Type_number: 26
+List sensors: Name: Pedestrian Dead Reckoning Sensor /Type_String:  /Type_number: 65546
+List sensors: Name: Heart Rate Variability Sensor /Type_String:  /Type_number: 65547
+List sensors: Name: Activity Detection Sensor /Type_String:  /Type_number: 65548
+List sensors: Name: Beat to Beat Interval (RRI) Sensor /Type_String:  /Type_number: 65539
+List sensors: Name: Sensor Temperature Sensor /Type_String:  /Type_number: 65543
+List sensors: Name: Ott Debug Sensor /Type_String:  /Type_number: 65545
+List sensors: Name: Game Rotation Vector Sensor /Type_String: android.sensor.game_rotation_vector /Type_number: 15
+List sensors: Name: Gravity Sensor /Type_String: android.sensor.gravity /Type_number: 9
+List sensors: Name: Linear Acceleration Sensor /Type_String: android.sensor.linear_acceleration /Type_number: 10
+
