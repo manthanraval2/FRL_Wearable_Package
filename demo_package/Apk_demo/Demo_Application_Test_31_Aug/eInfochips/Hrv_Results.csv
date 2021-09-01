@@ -1,0 +1,5 @@
+t_stamp,12295101991432,hrvMsg->hrv,0.0,hrvMsg->hr,0.0,hrvMsg->interval,200.0,hrvMsg->coverage,1199.0,hrvMsg->samples,0.0,hrvMsg->gaps,0.0,hrvMsg->method,0.0,Epoch time,1629480180,Curr_time,17:23:00
+t_stamp,12296297188212,hrvMsg->hrv,0.0,hrvMsg->hr,0.0,hrvMsg->interval,200.0,hrvMsg->coverage,1002.0,hrvMsg->samples,0.0,hrvMsg->gaps,1.0,hrvMsg->method,0.0,Epoch time,1629480182,Curr_time,17:23:02
+t_stamp,12297496373706,hrvMsg->hrv,193.0,hrvMsg->hr,50.209206,hrvMsg->interval,200.0,hrvMsg->coverage,1195.0,hrvMsg->samples,1.0,hrvMsg->gaps,0.0,hrvMsg->method,0.0,Epoch time,1629480183,Curr_time,17:23:03
+t_stamp,12298495427364,hrvMsg->hrv,4.0,hrvMsg->hr,50.041702,hrvMsg->interval,200.0,hrvMsg->coverage,1199.0,hrvMsg->samples,1.0,hrvMsg->gaps,0.0,hrvMsg->method,0.0,Epoch time,1629480184,Curr_time,17:23:04
+t_stamp,12299693487572,hrvMsg->hrv,200.0,hrvMsg->hr,60.06006,hrvMsg->interval,200.0,hrvMsg->coverage,999.0,hrvMsg->samples,1.0,hrvMsg->gaps,0.0,hrvMsg->method,0.0,Epoch time,1629480185,Curr_time,17:23:05
