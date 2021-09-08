@@ -1,0 +1,564 @@
+
+    <html><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <style>
+              table, tr, td, th{
+              border: 1px solid black;
+              border-collapse: collapse;
+              padding: 5px;
+              }
+                                  
+            </style>
+
+            <style type="text/css">
+
+            .test-result-table {
+
+    #            border: 1px solid black;
+                width: 800px;
+            }
+
+            .test-result-table-header-cell {
+
+    #            border-bottom: 1px solid black;
+                background-color: grey;
+                color: white;
+            }
+
+            .test-result-step-command-cell {
+
+    #            border-bottom: 1px solid black;
+            }
+
+            .test-result-step-description-cell {
+
+    #            border-bottom: 1px solid black;
+            }
+
+            .test-result-step-result-cell-ok {
+    #            border-bottom: 1px solid black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .test-result-step-result-cell-failure {
+
+                color: red;
+    #            border-bottom: 1px solid black;
+                background-color:  #f7dc6f;
+                <!-- background-color: red; -->
+            }
+
+            .test-result-step-result-cell-notperformed {
+
+    #            border-bottom: 1px solid gray;
+                background-color: white;
+            }
+
+            .test-result-describe-cell {
+                background-color: tan;
+                font-style: italic;
+            }
+
+            .test-result-step-result-cell-ok {
+                color: green;
+    #            border-bottom: 1px solid black;
+                background-color:  #f7dc6f;
+                font-size: 20px;
+            }
+            
+            .center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            .left {
+              margin-left: 0;
+            }
+
+            .right {
+              margin-right: 10;
+            }
+
+            .summary-table-data {
+                background-color:powderblue; 
+                color:black;
+                font-weight: bold;
+                font-family:verdana; 
+            }
+            
+            .test-result-step-row test-result-step-row-altone {
+                color:black;
+            }
+            
+            # result{
+            font-weight: bold;
+            }
+
+            </style>
+        </head>
+        <body>
+            <h1 class="test-results-header">
+                <center>Test Report</center>
+            </h1>
+
+    <div style="overflow-x:auto;">
+            <table style="width:100%">
+                <tbody><tr>
+                    <td class="summary-table-data"> Project Name </td>
+                    <td class="summary-table-data"> Wearable Device-FRL  </td>                
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> Test Type </td>
+                    <td class="summary-table-data"> API Testing </td>                
+                </tr>
+                <tr>
+                    <td rowspan="5" class="summary-table-data"> Test Build Version of Board </td>
+                    <tr>
+                        <td class="summary-table-data"> device_build_type:mos-userdebug </td>
+                    
+                    </tr>
+                    <tr>
+                        <td class="summary-table-data"> build_version_release:11 </td>
+                    </tr>
+                    <tr>
+                        <td class="summary-table-data"> build_id:RKQ1.210324.001 </td>
+                    </tr>
+                    <tr>
+                        <td class="summary-table-data"> build_version_incremental:19801700000000000 </td>
+                    </tr>               
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> Date &amp; Time </td>
+                    <td class="summary-table-data">
+                        <p>
+                            <span id="datetime">23.07.2021 11:49</span>
+                              <script>
+                                var dt = new Date();
+                                document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+ (dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+(("0"+dt.getMinutes()).slice(-2));
+                              </script>
+                        </p>
+                    </td>
+                                  
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> 						
+                        Pass 
+                    </td>
+                    <td class="summary-table-data"> 
+                        16
+                    </td>                 	
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> 						
+                        Fail 
+                    </td>
+                    </td><td class="summary-table-data"> 
+                        0
+                    </td>                   	
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> 
+                        Not Executed 
+                    </td>
+                    <td class="summary-table-data"> 
+                        0 
+                    </td>                
+                </tr>
+                <tr>
+                    <td class="summary-table-data"> 
+                        Total 
+                    </td>
+                    <td class="summary-table-data"> 
+                        16
+                    </td>               
+                </tr>
+            </tbody></table>
+
+            <table class="test-result-table" style="width:100%" cellspacing="0">
+                    <thead><tr>
+                        <th class="test-result-table-header-cell">
+                            Sensor Name
+                        </th>
+                        <th class="test-result-table-header-cell">
+                            Description
+                        </th>
+                        <th class="test-result-table-header-cell">
+                            Called API's
+                        </th>
+                        <th class="test-result-table-header-cell" colspan="2">
+                            Sensor's Data
+                        </th>
+                        <th class="test-result-table-header-cell" >
+                            Result
+                        </th>              
+                        <th class="test-result-table-header-cell">
+                            Log File
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> ALT </td>
+                        <td rowspan="2"> To Validate ALT Pressure Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > t_stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Alt_Results.csv"> Alt_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(Sensor.TYPE_PRESSURE) </td> 
+                        <td> hPa </td>
+                        <td> 0 </td>
+                     </tr>
+                                        
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Heart-Rate </td>
+                        <td rowspan="2"> To Validate Heart-Rate Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 349907127824	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Hrm_Results.csv"> Hrm_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(Sensor.TYPE_HEART_RATE) </td> 
+                        <td> bmp </td>
+                        <td> 71.0 </td>
+                     </tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="4" class="test-result-step-command-cell"> Gyroscope </td>
+                        <td rowspan="4"> To Validate Gyroscope Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1740793546885	</td>
+                        <td rowspan="4" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="4">
+                                    <a href="eInfochips/Gyr_Results.csv"> Gyr_Results.csv </a> </td>    
+                    </tr>
+                    <tr>
+                        <td> x_val </td>
+                        <td> 0.017102487 </td>
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="2"> getDefaultSensor(Sensor.TYPE_GYROSCOPE) </td> 
+                        <td> y_val </td>
+                        <td> -0.0073320153 </td>
+                    </tr>
+                    <tr>
+                        <td> z_val </td>
+                        <td> 0.0036618465 </td>
+                    </tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="4" class="test-result-step-command-cell"> Accelerometer </td>
+                        <td rowspan="4"> To Validate Accelerometer Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1740793525710	</td>
+                        <td rowspan="4" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="4">
+                                    <a href="eInfochips/Acc_Results.csv"> Acc_Results.csv </a> </td>    
+                    </tr>
+                    <tr>
+                        <td> x_val </td>
+                        <td> -0.29194298 </td>
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="2"> getDefaultSensor(Sensor.TYPE_ACCELEROMETER) </td> 
+                        <td> y_val </td>
+                        <td> -0.16033669 </td>
+                    </tr>
+                    <tr>
+                        <td> z_val </td>
+                        <td> 9.81533 </td>
+                    </tr>
+                                        
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Pedometer </td>
+                        <td rowspan="2"> To Validate Pedometer Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1665365427602 </td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Ped_Results.csv"> Ped_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(Sensor.TYPE_STEP_COUNTER) </td> 
+                        <td> steps </td>
+                        <td> 0 </td>
+                     </tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Tilt Sensor </td>
+                        <td rowspan="2"> To Validate Tilt Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1180451446191	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Tilt_Results.csv"> Tilt_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(26) </td> 
+                        <td> tiltVal </td>
+                        <td> 1.0 </td>
+                    </tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="3" class="test-result-step-command-cell"> OnWristDetection </td>
+                        <td rowspan="3"> To Validate OnWristDetection Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1629999581484	</td>
+                        <td rowspan="3" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="3">
+                                    <a href="eInfochips/Owd_Results.csv"> Owd_Results.csv </a> </td>    
+                    </tr>
+                    <tr>
+                        <td> owd_prox </td>
+                        <td> 1.0 </td>
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(65544) </td> 
+                        <td> owd_cradle </td>
+                        <td> 0.0 </td>
+                    </tr>
+                    
+                   <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="8" class="test-result-step-command-cell"> PPG Sensor </td>
+                        <td rowspan="8"> To Validate PPG Sensor </td>
+                        <td rowspan="4"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="8" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="8">
+                                    <a href="eInfochips/Ppg_Results.csv"> Ppg_Results.csv </a> </td>  
+                    </tr>
+						<tr>
+							<td> ppg_frame </td>
+							<td> 0 </td>
+						</tr>  
+						<tr>
+							<td> ppg_ir_val_1 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> ppg_ir_val_2 </td>
+							<td> 0 </td>
+						</tr>
+					
+								
+						<tr>
+							<td rowspan="4"> getDefaultSensor(65541) </td> 
+							<td> ppg_red_val_1 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> ppg_red_val_2 </td>
+							<td> 0 </td>
+						</tr>
+						
+						<tr>
+							<td> ppg_green_val_1 </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> ppg_green_val_2 </td>
+							<td> 0 </td>
+						</tr>
+
+					<tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="3" class="test-result-step-command-cell"> Beat to Beat(RRI) Sensor </td>
+                        <td rowspan="3"> To Validate RRI Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="3" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="3">
+                                    <a href="eInfochips/Rri_Results.csv"> Rri_Results.csv </a> </td>    
+                    </tr>
+                    
+						<tr>
+							<td> rri_Msg_interval_ms </td>
+							<td> 0 </td>
+						</tr>  		
+						<tr>
+							<td rowspan="1"> getDefaultSensor(65539) </td> 
+							<td> rri_Msg_peak_ms </td>
+							<td> 0 </td>
+						</tr>
+												
+					<tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="3" class="test-result-step-command-cell"> Temperature Debug Virtual Sensor </td>
+                        <td rowspan="3"> To Validate Temperature Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1740532950218	</td>
+                        <td rowspan="3" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="3">
+                                    <a href="eInfochips/Temp_Results.csv"> Temp_Results.csv </a> </td>    
+                    </tr>
+                    
+						<tr>
+							<td> Sensor Id </td>
+							<td> 22 </td>
+						</tr>  		
+						<tr>
+							<td rowspan="1"> getDefaultSensor(65543) </td> 
+							<td> Temp (fahrenheit) </td>
+							<td> 32.0 </td>
+						</tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Calorie Sensor </td>
+                        <td rowspan="2"> To Validate Calorie Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > -12374646923	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Cal_Results.csv"> Cal_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(65540) </td> 
+                        <td> cal_value </td>
+                        <td> 0.0 </td>
+                    </tr>
+
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> OTT </td>
+                        <td rowspan="2"> To Validate OTT Pressure Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > t_stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Ott_Results.csv"> Ott_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(65545) </td> 
+                        <td> ott_data_bytes </td>
+                        <td> 0 </td>
+                     </tr>    
+
+    		    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="4" class="test-result-step-command-cell"> PedestrianDeadReckoning Sensor </td>
+                        <td rowspan="4"> To Validate PedestrianDeadReckoning Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 1740086243969	</td>
+                        <td rowspan="4" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="4">
+                                    <a href="eInfochips/Pdr_Results.csv"> Pdr_Results.csv </a> </td>    
+                    </tr>
+                    
+                    <tr>
+                        <td> Sensor Position Update </td>
+                        <td> 1.0 </td>
+                    </tr>  		
+                    <tr>
+                        <td rowspan="2"> getDefaultSensor(65546) </td> 
+                        <td> Position x_delta_meters </td>
+                        <td> -0.08355158 </td>
+                    </tr>
+                    <tr>
+                        <td> Position y_delta_meters </td>
+                        <td> 0.99993354 </td>
+                    </tr>
+                    
+					<tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Significant Motion Virtual Sensor </td>
+                        <td rowspan="2"> To Validate Significant Motion Sensor </td>
+                        <td rowspan="2"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > -13086351139	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Sgm_Results.csv"> Sgm_Results.csv </a> </td>    
+                    </tr>
+                    
+						<tr>
+							<td> Sensor Position Update </td>
+							<td> 1.0 </td>
+						</tr>  	
+						
+					<tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="8" class="test-result-step-command-cell"> HRV RMSSD Sensor </td>
+                        <td rowspan="8"> To Validate HRV RMSSD Sensor </td>
+                        <td rowspan="4"> getSystemService </td>
+                        <td > time-stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="8" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="8">
+                                    <a href="eInfochips/Hrv_Results.csv"> Hrv_Results.csv </a> </td>    
+                    </tr>
+                    
+						<tr>
+							<td> hrvMsg->hrv </td>
+							<td> 0 </td>
+						</tr>  
+						<tr>
+							<td> hrvMsg->hr </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> hrvMsg->interval </td>
+							<td> 0 </td>
+						</tr>
+								
+						<tr>
+							<td rowspan="4"> getDefaultSensor(65547) </td> 
+							<td> hrvMsg->coverage </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> hrvMsg->samples </td>
+							<td> 0 </td>
+						</tr>	
+						<tr>
+							<td> hrvMsg->gaps </td>
+							<td> 0 </td>
+						</tr>
+						<tr>
+							<td> hrvMsg->method </td>
+							<td> 0 </td>
+						</tr>
+                        
+                    <tr class="test-result-step-row test-result-step-row-altone">
+                        <td rowspan="2" class="test-result-step-command-cell"> Activity Detection Sensor </td>
+                        <td rowspan="2"> To Validate Activity Detection Sensor </td>
+                        <td rowspan="1"> getSystemService </td>
+                        <td > t_stamp </td>
+                        <td > 0	</td>
+                        <td rowspan="2" class="test-result-step-result-cell-ok" id="result"> PASS </td>
+                        <td rowspan="2">
+                                    <a href="eInfochips/Adt_Results.csv"> Adt_Results.csv </a> </td>    
+                    </tr>
+                                
+                    <tr>
+                        <td rowspan="1"> getDefaultSensor(65548) </td> 
+                        <td> adt_activity </td>
+                        <td> 0 </td>
+                     </tr>    
+
+                 </tbody>
+            </table>
+            </div>
+    </body></html>
+    
